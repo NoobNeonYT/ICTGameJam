@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -16,6 +18,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private string volumeParameter = "MasterVolume";
+    [SerializeField] private GameObject volumePanel;
+    [SerializeField] private Button volumeButton;
 
     private void Start()
     {
@@ -71,5 +75,45 @@ public class UIManager : MonoBehaviour
         // Linear 0–1 → dB
         float dB = Mathf.Log10(value) * 20;
         audioMixer.SetFloat(volumeParameter, dB);
+    }
+    private bool isVolumeOpen = false;
+
+    private void Awake()
+    {
+        // ผูกปุ่มกด Volume
+        volumeButton.onClick.AddListener(ToggleVolumePanel);
+    }
+
+    private void ToggleVolumePanel()
+    {
+        isVolumeOpen = !isVolumeOpen;
+        volumePanel.SetActive(isVolumeOpen);
+    }
+    private void Update()
+    {
+        if (isVolumeOpen && Input.GetMouseButtonDown(0))
+        {
+            if (!IsPointerOverUIObject())
+            {
+                CloseVolumePanel();
+            }
+        }
+    }
+
+    private void CloseVolumePanel()
+    {
+        isVolumeOpen = false;
+        volumePanel.SetActive(false);
+    }
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+
+        // ถ้าคลิกโดน UI ให้ return true
+        return results.Count > 0;
     }
 }
