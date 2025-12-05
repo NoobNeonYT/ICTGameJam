@@ -610,6 +610,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625580886}
   m_CullTransparentMesh: 1
+--- !u!1 &771260027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 771260030}
+  - component: {fileID: 771260029}
+  - component: {fileID: 771260028}
+  m_Layer: 5
+  m_Name: Pet_Character_display
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &771260028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771260027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &771260029
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771260027}
+  m_CullTransparentMesh: 1
+--- !u!224 &771260030
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771260027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1557638707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &921930778
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +866,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c24f4eefe6ebd174686a8380565dab2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grownscript
+  isfinalstage: 0
+  CharacterList:
+  - Name: 
+    CharacterSprite: {fileID: -8899696506580805645, guid: 7ff20a551abcad14ab1071c740189976, type: 3}
+    RequiredGrown: 10
+  - Name: 
+    CharacterSprite: {fileID: 3013098771755740283, guid: 2e2b8a0f2256d5a4b8f76762e948ddea, type: 3}
+    RequiredGrown: 10
+  - Name: 
+    CharacterSprite: {fileID: -4139140724717854316, guid: 0d0c9af6fdeee03488114d63b85c4c04, type: 3}
+    RequiredGrown: 10
+  - Name: 
+    CharacterSprite: {fileID: -8417540969569894018, guid: 08001af242da1084388c9989d42cd31f, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: 7240553006616661649, guid: 5cd54071cf3ea72489e247b48d3e9ce6, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -5082116869651992034, guid: f5a375e57b6a41c41939d2028180d0b3, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -8068897404171548390, guid: a142d2252a454884089624a4ff757cc0, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: 8061414403203186373, guid: 82967cab4245bd14b9afd14a8517542d, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -7170428692201190875, guid: 5d21d3ed8a6e01546b22c3c9dfe310de, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: 8105323379734740821, guid: 3d6635e542b092a488c82390516f2e6d, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: 2113941045486415927, guid: 0c2bf8b91d0218b428bf0ad93c7c166b, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -4734095297864799994, guid: 09e0402305ddd2f4abb90a8898fb4bab, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: 3271094098745440903, guid: 07b3ce43c6360474a95fce0c7d780994, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -1371878805610360205, guid: 1cc503e1a4bfe994fb646ae5be99c72a, type: 3}
+    RequiredGrown: 15
+  - Name: 
+    CharacterSprite: {fileID: -436489463961371351, guid: 347f300f901d65d49bd77fa18a76bb15, type: 3}
+    RequiredGrown: 15
+  CharacterDisplayImage: {fileID: 771260028}
   Love: 0
   SumLove: 0
   Grown: 0
@@ -1418,6 +1541,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 771260030}
   - {fileID: 2143458396}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
