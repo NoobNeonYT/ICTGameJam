@@ -72,6 +72,11 @@ public class Grownscript : MonoBehaviour
     private Color originalColor;
     private Vector3 originalScale;
     private Vector3 originalanimationscale;
+    void Awake()
+    {
+        // ควรโหลด Bank ก่อนเสมอ
+        AkSoundEngine.LoadBank("MusicBank", out uint bankID);
+    }
 
     void Start()
     {
@@ -94,10 +99,15 @@ public class Grownscript : MonoBehaviour
         originalanimationscale = targetImage.transform.localScale;
 
         PlayPopEffect();
+        AkSoundEngine.LoadBank("UISoundBank", out uint bankID);
+        AkSoundEngine.LoadBank("MusicMenuBank", out uint uibankID);
+
+        
     }
 
     void Update()
     {
+        
         if (timerRunning)
         {
             if (timeremain > 0)
@@ -117,6 +127,7 @@ public class Grownscript : MonoBehaviour
     public void OnFoodButton1Click(int buttonIndex)
     {
         PlayScalePop();
+        
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -347,6 +358,7 @@ public class Grownscript : MonoBehaviour
         // หยุด Coroutine เดิม (ถ้ามี) ก่อนเริ่ม Coroutine ใหม่
         StopAllCoroutines();
         StartCoroutine(ScalePopRoutine(animationDuration, scalePopFactor));
+        AkSoundEngine.PostEvent("UISound", gameObject);
     }
 
     private IEnumerator ScalePopRoutine(float duration, float targetScaleFactor)
