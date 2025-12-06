@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" SchemaVersion="133" RootDocumentID="{7A061427-90BC-4629-A8B2-25465C27520E}" ParentDocumentID="{7A061427-90BC-4629-A8B2-25465C27520E}">
+	<Events>
+		<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" OwnerID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="SecondFormEating" ID="{2FFB8A98-6135-4C5C-A3A0-3EBC64ADC5ED}">
+					<ChildrenList>
+						<Action Name="" ID="{C67AF7A5-9104-438D-8639-5B155B12F61A}" ShortID="1025413800">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eat_2_Angry" ID="{E283032D-8F09-4D56-ACDB-1C9C2ADCCF2E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EBB90A31-2862-46D1-AD15-6D57FCDFF974}" ShortID="510272275">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eat_2_Angry" ID="{E283032D-8F09-4D56-ACDB-1C9C2ADCCF2E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FirstFormEating" ID="{55767F58-77DF-47D7-B74F-8B6011D14C20}">
+					<ChildrenList>
+						<Action Name="" ID="{EDA1E1B6-E8B1-45C9-BE0F-FD3E4DDAE5E6}" ShortID="838481422">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1 FormEating" ID="{36CBF10B-F32D-4C7C-8525-686B2A9CB186}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ThirdFromEatingAH" ID="{FBB528EB-46E3-437F-B86F-35E69D06761F}">
+					<ChildrenList>
+						<Action Name="" ID="{49DB4F5D-9DA2-4C7F-8450-EFA54FA03AB1}" ShortID="1029001079">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AH" ID="{C24EBCBA-56AD-4404-8CA4-B50C6354B832}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DF5AC970-43D0-407A-B8AA-2AC9B1751F9E}" ShortID="105556330">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AH" ID="{C24EBCBA-56AD-4404-8CA4-B50C6354B832}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ThirdFromEatingHA" ID="{4DA85F40-5BC0-4E1C-8629-78044A61C6FF}">
+					<ChildrenList>
+						<Action Name="" ID="{4C14E6C5-976C-4ADF-B526-FA2F93F11749}" ShortID="624977131">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HA" ID="{CA8F3C87-94F3-49C2-9915-006E6C879B9F}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7F09B3F8-38D5-424B-A096-2146D5AC4DEE}" ShortID="727036724">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HA" ID="{CA8F3C87-94F3-49C2-9915-006E6C879B9F}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ThirdFromEatingHH" ID="{0CC3E67D-70F8-44CA-9730-5237AE83D5B5}">
+					<ChildrenList>
+						<Action Name="" ID="{346B16A9-0D07-4584-AA32-AE1102C5D7D2}" ShortID="689044591">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8925C32A-D257-42DA-865D-38DAADF0A7B6}" ShortID="152888611">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ThirdFromEatingAA" ID="{63A3EFB3-44B6-4EF6-B076-45BF35435C16}">
+					<ChildrenList>
+						<Action Name="" ID="{628226F7-B69B-4FAB-8B85-F92C1A4A1803}" ShortID="737392325">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AA" ID="{42D5418B-802F-4BCA-9A35-84672015FE8C}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E1D8FB5D-0342-44D4-9182-D836B1E1BB92}" ShortID="636583517">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AA" ID="{42D5418B-802F-4BCA-9A35-84672015FE8C}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

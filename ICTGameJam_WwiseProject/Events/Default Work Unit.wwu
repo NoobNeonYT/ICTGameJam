@@ -3,39 +3,65 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="CutscenceAmbient" ID="{58882766-C156-4E8E-B516-B4D0B1611725}">
+				<Event Name="MusicMenu" ID="{ACEED304-E5C1-4DE0-A3DE-DF8E1AB0185C}">
 					<ChildrenList>
-						<Action Name="" ID="{DEF566B8-1CCD-4AD5-A953-AF0B9D8A7437}" ShortID="737056689">
+						<Action Name="" ID="{412FE52A-6F7B-4984-B07B-7458347D62FC}" ShortID="490996821">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B069A177-562E-43FA-AC48-8C81F0264B24}" ShortID="711214206">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicIngame" ID="{29B74B4C-C7C0-4349-B0C9-9B105A690CE1}">
+					<ChildrenList>
+						<Action Name="" ID="{5B59DD28-E50A-410E-845A-D650057C3893}" ShortID="523208482">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bird_Nature" ID="{797F3CC6-355C-4097-9629-DB044315AC11}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{FD44FD17-35C7-42CB-AFD5-CDE7F443DB73}" ShortID="1030752831">
+						<Action Name="" ID="{4D4F0C59-F39E-48D3-8EB8-021EE1BEF61B}" ShortID="210802349">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Bird_Nature" ID="{797F3CC6-355C-4097-9629-DB044315AC11}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="FirstFormEating" ID="{55767F58-77DF-47D7-B74F-8B6011D14C20}">
+				<Event Name="UISound" ID="{1BD8A048-F7D1-4D49-838E-A1D3275D3B3C}">
 					<ChildrenList>
-						<Action Name="" ID="{EDA1E1B6-E8B1-45C9-BE0F-FD3E4DDAE5E6}" ShortID="838481422">
+						<Action Name="" ID="{CE3F8D18-3A2F-43F6-8B44-8147182517BC}" ShortID="202204119">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="1 FormEating" ID="{36CBF10B-F32D-4C7C-8525-686B2A9CB186}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+									<ObjectRef Name="UI_Click" ID="{0A90FA31-47D1-4EE2-9DDA-2973CEAB613D}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="SecondFormEating" ID="{2FFB8A98-6135-4C5C-A3A0-3EBC64ADC5ED}"/>
+				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
+				<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

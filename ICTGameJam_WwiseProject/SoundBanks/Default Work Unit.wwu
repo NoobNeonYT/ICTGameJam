@@ -8,7 +8,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<WorkUnit Name="Eating" ID="{0739348D-56BA-46DC-AC4B-6BD07B29EBE1}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
