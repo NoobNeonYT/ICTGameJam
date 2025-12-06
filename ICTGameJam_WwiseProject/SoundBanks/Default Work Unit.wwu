@@ -3,8 +3,31 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{05A212DD-FB86-4958-93C5-568F134BDAE6}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Test" ID="{8906181F-76E5-4AAF-8021-9394ABA43474}">
-					<ObjectInclusionList/>
+				<SoundBank Name="UiSoundBank" ID="{8906181F-76E5-4AAF-8021-9394ABA43474}">
+					<ObjectInclusionList>
+						<ObjectRef Name="UISound" ID="{1BD8A048-F7D1-4D49-838E-A1D3275D3B3C}" WorkUnitID="{7A061427-90BC-4629-A8B2-25465C27520E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="AllEatingSoundBank" ID="{F9CBF813-FA7B-400B-B25A-05893C52ADAE}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" WorkUnitID="{91459418-98ED-4EBF-850C-337190BAEB5D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="CutscenceSoundBank" ID="{5108C26D-1800-40D1-9431-A52E3E0141EF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" WorkUnitID="{8C329B2B-77E1-43B5-877F-864D12D98601}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MusicMenuBank" ID="{09C83EE6-552A-43F7-8331-64A0079BA489}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" WorkUnitID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

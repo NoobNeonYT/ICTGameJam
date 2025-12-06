@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7A061427-90BC-4629-A8B2-25465C27520E}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="UISound" ID="{1BD8A048-F7D1-4D49-838E-A1D3275D3B3C}">
+					<ChildrenList>
+						<Action Name="" ID="{CE3F8D18-3A2F-43F6-8B44-8147182517BC}" ShortID="202204119">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Click" ID="{0A90FA31-47D1-4EE2-9DDA-2973CEAB613D}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
+				<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

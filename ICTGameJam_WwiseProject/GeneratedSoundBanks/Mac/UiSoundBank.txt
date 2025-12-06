@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	471286636	UISound			\Default Work Unit\UISound	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	795592417	UI_Click	.cache\72\{72EF753F-79A2-F71E-D4F6-887D029E6617}.wem		\Containers\Default Work Unit\Ui\UI_Click		7396
+
