@@ -63,12 +63,15 @@ public class Grownscript : MonoBehaviour
     [SerializeField]
     private Image targetImage;
     [SerializeField] private float effectDuration = 1.6f;
+    [SerializeField] private float animationDuration = 0.5f;
     [SerializeField] private float scaleFactor = 2f;
+    [SerializeField] private float scalePopFactor = 1.2f;
     [SerializeField] private Color effectColor = Color.black;
     [SerializeField] private Color finalColor = Color.white;
 
     private Color originalColor;
     private Vector3 originalScale;
+    private Vector3 originalanimationscale;
 
     void Start()
     {
@@ -88,6 +91,7 @@ public class Grownscript : MonoBehaviour
             targetImage.color = effectColor;
         }
         originalScale = transform.localScale;
+        originalanimationscale = targetImage.transform.localScale;
 
         PlayPopEffect();
     }
@@ -112,6 +116,7 @@ public class Grownscript : MonoBehaviour
 
     public void OnFoodButton1Click(int buttonIndex)
     {
+        PlayScalePop();
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -127,8 +132,12 @@ public class Grownscript : MonoBehaviour
 
         SetupFoodButtons();
     }
+
+
     public void OnFoodButton2Click(int buttonIndex)
     {
+        PlayScalePop();
+
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -143,9 +152,14 @@ public class Grownscript : MonoBehaviour
         FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
 
         SetupFoodButtons();
+        
+
+
     }
     public void OnFoodButton3Click(int buttonIndex)
     {
+        PlayScalePop();
+
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -326,4 +340,42 @@ public class Grownscript : MonoBehaviour
         targetImage.color = originalColor;
         transform.localScale = originalScale;
     }
+
+
+    public void PlayScalePop()
+    {
+        // หยุด Coroutine เดิม (ถ้ามี) ก่อนเริ่ม Coroutine ใหม่
+        StopAllCoroutines();
+        StartCoroutine(ScalePopRoutine(animationDuration, scalePopFactor));
+    }
+
+    private IEnumerator ScalePopRoutine(float duration, float targetScaleFactor)
+    {
+        // 1. ตั้งค่าเริ่มต้น
+        Vector3 startScale = originalanimationscale;
+        Vector3 peakScale = originalanimationscale * targetScaleFactor;
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+
+            // progress: ค่า 0 ถึง 1 ตามระยะเวลา
+            float progress = timer / duration;
+
+            // Mathf.PingPong: ทำให้ค่า progress เป็น 0 -> 1 -> 0
+            // โดยเราคูณ progress ด้วย 2.0f เพื่อให้มันวิ่งไป-กลับใน duration ที่กำหนด
+            float pingPongValue = Mathf.PingPong(progress * 2.0f, 1.0f);
+
+            // 2. ปรับขนาด
+            // Lerp จะวิ่งจาก startScale (0) ไป peakScale (1) แล้วกลับมา startScale (0)
+            targetImage.transform.localScale = Vector3.Lerp(startScale, peakScale, pingPongValue);
+
+            yield return null;
+        }
+
+        // 3. กำหนดค่าสุดท้ายให้เป็นขนาดเดิมเป๊ะ
+        targetImage.transform.localScale = originalanimationscale;
+    }
 }
+

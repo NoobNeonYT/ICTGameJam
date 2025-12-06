@@ -20,6 +20,8 @@ public class Uianimation : MonoBehaviour
     // *** เปลี่ยน Array/List เดิม เป็น List ของ ImageGroup ***
     [SerializeField]
     private List<ImageGroup> imageGroups; // List ที่เก็บทั้งช่อง UI และ Sprite ของช่องนั้น
+    [SerializeField]
+    private Image targetImage; // ตัวแปรสำหรับเก็บ Image Component ที่จะทำการขยาย
 
     // ตัวแปรสำหรับกำหนดช่วงเวลาการสุ่ม (โค้ดเดิม)
 
