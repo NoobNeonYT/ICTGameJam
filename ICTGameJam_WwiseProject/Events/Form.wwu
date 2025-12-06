@@ -26,16 +26,6 @@
 				</Event>
 				<Event Name="FirstFormEating" ID="{55767F58-77DF-47D7-B74F-8B6011D14C20}">
 					<ChildrenList>
-						<Action Name="" ID="{27605B7A-2D64-42CE-84E6-9865A552E5D7}" ShortID="436916365">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="1 FormEating" ID="{36CBF10B-F32D-4C7C-8525-686B2A9CB186}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{EDA1E1B6-E8B1-45C9-BE0F-FD3E4DDAE5E6}" ShortID="838481422">
 							<ReferenceList>
 								<Reference Name="Target">
