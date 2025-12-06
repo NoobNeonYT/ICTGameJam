@@ -590,7 +590,7 @@ RectTransform:
   m_GameObject: {fileID: 625580886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1052410417}
@@ -598,7 +598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -117, y: 0.0000038147}
+  m_AnchoredPosition: {x: -229, y: 0.0000038147}
   m_SizeDelta: {x: 107.8452, y: 103.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625580888
@@ -803,14 +803,14 @@ RectTransform:
   m_GameObject: {fileID: 771260027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.917012, y: 9.917012, z: 9.917012}
+  m_LocalScale: {x: 5.568997, y: 5.568997, z: 5.568997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1557638707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 17}
+  m_AnchoredPosition: {x: 17, y: 94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &793255550
@@ -848,7 +848,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_SizeDelta: {x: 950, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793255552
 MonoBehaviour:
@@ -912,14 +912,14 @@ RectTransform:
   m_GameObject: {fileID: 921930778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3932, y: 2.3932, z: 2.3932}
+  m_LocalScale: {x: 1.3420448, y: 1.3420448, z: 1.3420448}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2143458396}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1014, y: 418}
+  m_AnchoredPosition: {x: 526, y: 204}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &921930780
@@ -1069,13 +1069,13 @@ MonoBehaviour:
   isfinalstage: 0
   CharacterList:
   - Name: 
-    CharacterSprite: {fileID: 21300000, guid: 3c5ab40a083be9d40bf726c3f960577e, type: 3}
+    CharacterSprite: {fileID: -8899696506580805645, guid: 7ff20a551abcad14ab1071c740189976, type: 3}
     RequiredGrown: 10
   - Name: 
-    CharacterSprite: {fileID: 3558507009246751098, guid: 70a92d40ad2b0874ea2c73320341c5a2, type: 3}
+    CharacterSprite: {fileID: 3013098771755740283, guid: 2e2b8a0f2256d5a4b8f76762e948ddea, type: 3}
     RequiredGrown: 20
   - Name: 
-    CharacterSprite: {fileID: 2136009232375730708, guid: ec9681db479208c4f94d3bb57e9275a7, type: 3}
+    CharacterSprite: {fileID: -4139140724717854316, guid: 0d0c9af6fdeee03488114d63b85c4c04, type: 3}
     RequiredGrown: 20
   - Name: 
     CharacterSprite: {fileID: -8417540969569894018, guid: 08001af242da1084388c9989d42cd31f, type: 3}
@@ -1122,42 +1122,78 @@ MonoBehaviour:
   timerText: {fileID: 921930780}
   timerRunning: 0
   AllAvailableFoods:
-  - Name: steak
+  - Name: watermelon
     LoveValue: 2
     GrownValue: 2
-    FoodSprite: {fileID: 4941998722648637955, guid: 6098191fa94d35a49ac0e00d0c785cc4, type: 3}
-  - Name: bug
-    LoveValue: -5
+    FoodSprite: {fileID: -6685673640782889408, guid: 2f83964bd7385f34393d7f540152644a, type: 3}
+  - Name: meat
+    LoveValue: 3
+    GrownValue: 2
+    FoodSprite: {fileID: 2343426861448146176, guid: 7571cbcea550a6d4eaaf82b551e2b6b3, type: 3}
+  - Name: rat
+    LoveValue: -3
+    GrownValue: 2
+    FoodSprite: {fileID: 2981699071720173372, guid: 468c64782e9718349a9af84019bfc21b, type: 3}
+  - Name: pancake
+    LoveValue: 2
     GrownValue: 1
-    FoodSprite: {fileID: -8340546935106921150, guid: b05d754f450dea24c8708c8a30ef392b, type: 3}
+    FoodSprite: {fileID: 8230478071672653583, guid: 3769bd50b0d05724e89d5e37e031cff2, type: 3}
+  - Name: poop
+    LoveValue: -3
+    GrownValue: 1
+    FoodSprite: {fileID: -2941620665475676723, guid: eb9f3b6e11403e1488d4616b82017444, type: 3}
+  - Name: icecreaam
+    LoveValue: 1
+    GrownValue: 1
+    FoodSprite: {fileID: 1120362639445743916, guid: 085d14be57f92944bb68c1fb2c735cda, type: 3}
+  - Name: bug
+    LoveValue: -2
+    GrownValue: 2
+    FoodSprite: {fileID: 6796656825888281025, guid: a126e09034493724284b9b852e210e9a, type: 3}
+  - Name: steak
+    LoveValue: 3
+    GrownValue: 2
+    FoodSprite: {fileID: 7150393733787059276, guid: 9323ab9696400da40bcb4d7d2d076ea3, type: 3}
+  - Name: fishbone
+    LoveValue: -2
+    GrownValue: 1
+    FoodSprite: {fileID: -4679344462880229567, guid: b4ea3a0dc4c898240898e90e7f6641c0, type: 3}
+  - Name: fruit
+    LoveValue: -1
+    GrownValue: 1
+    FoodSprite: {fileID: -3341314579871251669, guid: aede1ba4d7e2d5949a7c8429b430c379, type: 3}
+  - Name: chocolate
+    LoveValue: 2
+    GrownValue: 1
+    FoodSprite: {fileID: -7671853098862355828, guid: 226c7e56a1262a44091634dea0081da7, type: 3}
+  - Name: pudding
+    LoveValue: 2
+    GrownValue: 1
+    FoodSprite: {fileID: 7992605771214575141, guid: c54c3ebec8bd0b34a93113f292797454, type: 3}
   - Name: cake
     LoveValue: 3
     GrownValue: 2
-    FoodSprite: {fileID: 1090376217813512402, guid: aed020a27486e834199043f1cb808fca, type: 3}
-  - Name: fish
-    LoveValue: -4
-    GrownValue: 1
-    FoodSprite: {fileID: -2006298336991220807, guid: 15678343b2dca87439d2f2df17a3ccbb, type: 3}
-  - Name: pancake
-    LoveValue: 1
-    GrownValue: 2
-    FoodSprite: {fileID: 8166355864642938, guid: 81425b96d358d5548a71f6754e119c43, type: 3}
-  - Name: fruit
-    LoveValue: 1
-    GrownValue: 1
-    FoodSprite: {fileID: 9025503422985764318, guid: a54da7f2db6112c4a903fb890a80845a, type: 3}
-  - Name: pudding
-    LoveValue: 1
-    GrownValue: 2
-    FoodSprite: {fileID: -3566016025468952127, guid: c899c600d54dd0f44811d16d02425480, type: 3}
+    FoodSprite: {fileID: -4577942512120550205, guid: ef2dc3289e7bc5142b005b2c5beb1010, type: 3}
   - Name: salad
-    LoveValue: -2
+    LoveValue: -3
     GrownValue: 1
-    FoodSprite: {fileID: -177032605065898780, guid: 5f3d333b353ef3648887f6de74e4489c, type: 3}
+    FoodSprite: {fileID: -5343909469917258292, guid: b6cbce331ab1a154d8b7b6f8f1bf50d6, type: 3}
+  - Name: chicken
+    LoveValue: 3
+    GrownValue: 2
+    FoodSprite: {fileID: -6689015890456219937, guid: 6f64470d9d8fccc4081eedd50a03916d, type: 3}
   - Name: salmon
     LoveValue: 3
     GrownValue: 1
-    FoodSprite: {fileID: 5803354974798969303, guid: cd09c2a615bd19c46946823bc8a698f5, type: 3}
+    FoodSprite: {fileID: -6491209959015782822, guid: 0869a07aff44da54c96bf2d7b62e8a00, type: 3}
+  - Name: burger
+    LoveValue: 2
+    GrownValue: 1
+    FoodSprite: {fileID: -7874307153793175862, guid: d011e082664ae8541aea2f89ef6068d7, type: 3}
+  - Name: snake
+    LoveValue: -4
+    GrownValue: 2
+    FoodSprite: {fileID: 6488545241393881865, guid: af8cf110b1fa3c84f82b6048020d31b8, type: 3}
   FoodButtonImages:
   - {fileID: 625580889}
   - {fileID: 1891223668}
@@ -1331,7 +1367,7 @@ RectTransform:
   m_GameObject: {fileID: 1099314778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2589, y: 2.2589, z: 2.2589}
+  m_LocalScale: {x: 0.75754464, y: 0.75754464, z: 0.75754464}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 625580887}
@@ -1341,7 +1377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15, y: -336}
+  m_AnchoredPosition: {x: 15, y: -175}
   m_SizeDelta: {x: -1321.9929, y: -903.1438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099314780
@@ -1410,7 +1446,7 @@ RectTransform:
   m_GameObject: {fileID: 1226464855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1430483424}
@@ -1418,7 +1454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117, y: 0.0000038147}
+  m_AnchoredPosition: {x: 224, y: 0.0000038147}
   m_SizeDelta: {x: 107.8452, y: 103.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226464857
@@ -1932,7 +1968,7 @@ RectTransform:
   m_GameObject: {fileID: 1891223665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 301902520}
