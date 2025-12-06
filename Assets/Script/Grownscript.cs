@@ -9,8 +9,8 @@ using System.Collections;
 public class FoodItem
 {
     public string Name;
-    public int LoveValue;   // อาหารดี Love เป็น +, อาหารแย่ Love เป็น -
-    public int GrownValue;
+    public int LoveValue = 0;   // อาหารดี Love เป็น +, อาหารแย่ Love เป็น -
+    public int GrownValue = 0;
     public Sprite FoodSprite; // รูปภาพของอาหาร
 }
 
