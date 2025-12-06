@@ -3,52 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="MusicMenu" ID="{ACEED304-E5C1-4DE0-A3DE-DF8E1AB0185C}">
-					<ChildrenList>
-						<Action Name="" ID="{412FE52A-6F7B-4984-B07B-7458347D62FC}" ShortID="490996821">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{B069A177-562E-43FA-AC48-8C81F0264B24}" ShortID="711214206">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MusicIngame" ID="{29B74B4C-C7C0-4349-B0C9-9B105A690CE1}">
-					<ChildrenList>
-						<Action Name="" ID="{5B59DD28-E50A-410E-845A-D650057C3893}" ShortID="523208482">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4D4F0C59-F39E-48D3-8EB8-021EE1BEF61B}" ShortID="210802349">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="UISound" ID="{1BD8A048-F7D1-4D49-838E-A1D3275D3B3C}">
 					<ChildrenList>
 						<Action Name="" ID="{CE3F8D18-3A2F-43F6-8B44-8147182517BC}" ShortID="202204119">
@@ -62,6 +16,7 @@
 				</Event>
 				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
 				<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
