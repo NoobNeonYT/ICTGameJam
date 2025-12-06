@@ -33,7 +33,7 @@ public class Grownscript : MonoBehaviour
     [SerializeField]
     public Image CharacterDisplayImage;
 
-    private int currentCharacterIndex = 0;
+    public static int currentCharacterIndex = 0;
 
     [Header("Stats")]
     [SerializeField]
