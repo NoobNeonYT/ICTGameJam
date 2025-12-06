@@ -1,0 +1,57 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2254349229",
+    "Type": "User",
+    "GUID": "{09C83EE6-552A-43F7-8331-64A0079BA489}",
+    "Language": "SFX",
+    "Hash": "{E03A853D-8A66-9D6E-4D1A-A66ABB58DA64}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MusicMenuBank",
+    "ShortName": "MusicMenuBank",
+    "Path": "MusicMenuBank.bnk",
+    "Media": [
+     {
+      "Id": "732086431",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Music\\cotton-toys-soundroll-main-version-16753-01-17.wav",
+      "CachePath": "8C/{8C083DB1-11F0-AE42-AF1E-40512116F3FB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1121753349",
+      "Name": "MusicIngame",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\MusicIngame",
+      "GUID": "{29B74B4C-C7C0-4349-B0C9-9B105A690CE1}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "732086431"
+       }
+      ]
+     },
+     {
+      "Id": "4082046343",
+      "Name": "MusicMenu",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\MusicMenu",
+      "GUID": "{ACEED304-E5C1-4DE0-A3DE-DF8E1AB0185C}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "732086431"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{8B9ED6E9-FEF9-8020-9062-FAD04E638B0E}"
+ }
+}

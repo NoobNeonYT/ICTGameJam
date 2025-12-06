@@ -72,6 +72,18 @@ public class Grownscript : MonoBehaviour
     private Color originalColor;
     private Vector3 originalScale;
     private Vector3 originalanimationscale;
+    void Awake()
+    {
+
+        AkSoundEngine.LoadBank("MusicBank", out uint bankID);
+        AkSoundEngine.LoadBank("UISoundBank", out uint uiBankID);
+        AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
+        AkSoundEngine.LoadBank("CutscenceSoundBank", out uint scencebankID);
+        AkSoundEngine.LoadBank("AllEatingSoundBank", out uint eatbankID);
+
+        AkSoundEngine.PostEvent("MusicIngame", gameObject); 
+
+    }
 
     void Start()
     {
@@ -94,10 +106,17 @@ public class Grownscript : MonoBehaviour
         originalanimationscale = targetImage.transform.localScale;
 
         PlayPopEffect();
+        AkSoundEngine.LoadBank("UISoundBank", out uint bankID);
+        AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
+        AkSoundEngine.LoadBank("CutscenceSoundBank", out uint scencebankID);
+        AkSoundEngine.LoadBank("AllEatingSoundBank", out uint eatbankID);
+
+
     }
 
     void Update()
     {
+        
         if (timerRunning)
         {
             if (timeremain > 0)
@@ -114,9 +133,57 @@ public class Grownscript : MonoBehaviour
         }
     }
 
+    public void UpdateCharacterDisplay(int index)
+    {
+        if (index >= 0 && index < CharacterList.Count)
+        {
+            if (CharacterDisplayImage != null)
+            {
+                CharacterDisplayImage.sprite = CharacterList[index].CharacterSprite;
+                Debug.Log("Displayed character: " + CharacterList[index].Name);
+                AkSoundEngine.PostEvent("Evolution", gameObject);
+                if (index == 8 || index == 9 || index == 10 || index == 11)
+                {
+                    AkSoundEngine.ExecuteActionOnEvent(
+                     "MusicIngame",
+                        AkActionOnEventType.AkActionOnEventType_Stop,
+                     gameObject,
+                      0,
+                       AkCurveInterpolation.AkCurveInterpolation_Linear
+                    );
+
+                    AkSoundEngine.PostEvent("BadEnding", gameObject);
+                }
+                    
+            }
+
+            // *** การจัดการเสียงประจำร่าง ***
+            // 1. กำหนด Index ใหม่
+            currentCharacterIndex = index;
+
+            // 2. สั่งเล่นเสียงใหม่และหยุดเสียงเก่า
+            PlayCharacterVoice(currentCharacterIndex);
+        }
+        else
+        {
+            Debug.LogError("Character Index out of bounds: " + index);
+        }
+    }
+
+
+    public void PlayCharacterVoice(int charIndex)
+    {
+        string newEventName = "Char_Voice_" + charIndex.ToString();
+        AkSoundEngine.PostEvent(newEventName, gameObject);
+
+        Debug.Log($"Wwise: Posting voice event for state: {newEventName}");
+    }
+
     public void OnFoodButton1Click(int buttonIndex)
     {
         PlayScalePop();
+        PlayCharacterVoice(currentCharacterIndex);
+
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -137,6 +204,7 @@ public class Grownscript : MonoBehaviour
     public void OnFoodButton2Click(int buttonIndex)
     {
         PlayScalePop();
+        PlayCharacterVoice(currentCharacterIndex);
 
         if (isfinalstage) return;
 
@@ -158,7 +226,9 @@ public class Grownscript : MonoBehaviour
     }
     public void OnFoodButton3Click(int buttonIndex)
     {
+        
         PlayScalePop();
+        PlayCharacterVoice(currentCharacterIndex);
 
         if (isfinalstage) return;
 
@@ -219,21 +289,7 @@ public class Grownscript : MonoBehaviour
         }
     }
 
-    public void UpdateCharacterDisplay(int index)
-    {
-        if (index >= 0 && index < CharacterList.Count)
-        {
-            if (CharacterDisplayImage != null)
-            {
-                CharacterDisplayImage.sprite = CharacterList[index].CharacterSprite;
-                Debug.Log("Displayed character: " + CharacterList[index].Name);
-            }
-        }
-        else
-        {
-            Debug.LogError("Character Index out of bounds: " + index);
-        }
-    }
+    
 
     private void ResetStats()
     {
@@ -347,6 +403,7 @@ public class Grownscript : MonoBehaviour
         // หยุด Coroutine เดิม (ถ้ามี) ก่อนเริ่ม Coroutine ใหม่
         StopAllCoroutines();
         StartCoroutine(ScalePopRoutine(animationDuration, scalePopFactor));
+        AkSoundEngine.PostEvent("UISound", gameObject);
     }
 
     private IEnumerator ScalePopRoutine(float duration, float targetScaleFactor)
