@@ -8,7 +8,13 @@
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
-									<Modifier Name="" ID="{6E39D726-995D-4D13-945C-B1F91226CFA1}"/>
+									<Modifier Name="" ID="{6E39D726-995D-4D13-945C-B1F91226CFA1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
 								</ModifierInfo>
 							</ModifierList>
 						</Property>

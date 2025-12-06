@@ -1,0 +1,67 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3729149391",
+    "Type": "User",
+    "GUID": "{5108C26D-1800-40D1-9431-A52E3E0141EF}",
+    "Language": "SFX",
+    "Hash": "{A08C7965-E8AA-7BCB-E317-AE635FE2AF17}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\CutscenceSoundBank",
+    "ShortName": "CutscenceSoundBank",
+    "Path": "CutscenceSoundBank.bnk",
+    "Media": [
+     {
+      "Id": "372167397",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Bad End.wav",
+      "CachePath": "4B/{4BAC7E5F-571E-13C6-379F-4962BBDBFC79}.wem"
+     },
+     {
+      "Id": "403524634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Ambience\\Bird_Nature.wav",
+      "CachePath": "48/{4829E456-1F68-92E4-9AF8-38743D303EC4}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2804304819",
+      "Name": "BadEnding",
+      "ObjectPath": "\\Events\\Default Work Unit\\ScenceSound\\BadEnding",
+      "GUID": "{EA4DC730-214C-4876-8F4F-0EE6590954A9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "372167397"
+       }
+      ]
+     },
+     {
+      "Id": "202611472",
+      "Name": "CutscenceAmbient",
+      "ObjectPath": "\\Events\\Default Work Unit\\ScenceSound\\CutscenceAmbient",
+      "GUID": "{58882766-C156-4E8E-B516-B4D0B1611725}",
+      "DurationType": "OneShot",
+      "DurationMin": "79.04625",
+      "DurationMax": "79.04625",
+      "MediaRefs": [
+       {
+        "Id": "403524634"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{6C314F67-B389-F2EE-3D61-B7D11F689BDE}"
+ }
+}

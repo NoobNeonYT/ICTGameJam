@@ -1,0 +1,301 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2585283127",
+    "Type": "User",
+    "GUID": "{F9CBF813-FA7B-400B-B25A-05893C52ADAE}",
+    "Language": "SFX",
+    "Hash": "{D8B0144D-BFEB-2DAE-5D40-B4CF3DF8976C}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\AllEatingSoundBank",
+    "ShortName": "AllEatingSoundBank",
+    "Path": "AllEatingSoundBank.bnk",
+    "Media": [
+     {
+      "Id": "186136113",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AH\\Eating_AH.wav",
+      "CachePath": "74/{744D35D7-68AD-DF18-041E-AA0449589EBE}.wem"
+     },
+     {
+      "Id": "228078601",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\Kids\\Eat_KIds.wav",
+      "CachePath": "62/{620FB767-1D4A-9D57-0796-F84920317CFB}.wem"
+     },
+     {
+      "Id": "243920772",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\2 Form\\Eat_2_Angry.wav",
+      "CachePath": "BA/{BAF1B8BF-F272-B4CB-0240-D5A875B6A32F}.wem"
+     },
+     {
+      "Id": "358066055",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_4.wav",
+      "CachePath": "8D/{8D1074CE-920A-3C17-5097-A42EB6088866}.wem"
+     },
+     {
+      "Id": "371710938",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Awakening.wav",
+      "CachePath": "EE/{EEC19A64-F3DE-E823-27B8-C65A8502E49A}.wem"
+     },
+     {
+      "Id": "377256644",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_3.wav",
+      "CachePath": "46/{46909715-607B-4EA3-E009-05E9D4D52898}.wem"
+     },
+     {
+      "Id": "390895152",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\Kids\\Eat_KIds.wav",
+      "CachePath": "13/{13823474-A040-47A7-037E-75B4B375AC76}.wem"
+     },
+     {
+      "Id": "414764179",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_5.wav",
+      "CachePath": "B4/{B4734124-C16E-2E4D-2DE3-0166C4B73E34}.wem"
+     },
+     {
+      "Id": "443441612",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_1.wav",
+      "CachePath": "28/{287CE6A7-27B4-40A0-9DC0-2179AF0FF840}.wem"
+     },
+     {
+      "Id": "448348087",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\4 Form\\AAA & Secret\\Eating_AAA.wav",
+      "CachePath": "EB/{EBECA4F8-2422-00DF-DC5A-A1B2617E603B}.wem"
+     },
+     {
+      "Id": "509176006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\Kids\\Eat_KIds.wav",
+      "CachePath": "F5/{F52359C7-7960-DBE6-AE16-BA2A27BD5874}.wem"
+     },
+     {
+      "Id": "608457550",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_6.wav",
+      "CachePath": "E0/{E085C416-A0BC-4DD3-6EBC-D69D1F785A5D}.wem"
+     },
+     {
+      "Id": "688516119",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\Kids\\Eat_KIds.wav",
+      "CachePath": "2C/{2C613A38-1704-3C3F-BA8D-22B1DEF2C95C}.wem"
+     },
+     {
+      "Id": "702250583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\HH\\Eating_HH.wav",
+      "CachePath": "47/{470D0F4E-C538-02FB-29C3-25D751EB4393}.wem"
+     },
+     {
+      "Id": "901214739",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\HA\\Eating_HA.wav",
+      "CachePath": "E1/{E17907B8-F3A6-460C-5220-B4C8CD0C7F3F}.wem"
+     },
+     {
+      "Id": "961012535",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Eating\\3 Form\\AA\\Eating_Angry_2.wav",
+      "CachePath": "32/{32399C2B-A37D-F830-B1D7-0108164087DE}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "554389287",
+      "Name": "Char_Voice_0",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_0",
+      "GUID": "{55767F58-77DF-47D7-B74F-8B6011D14C20}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.75652885",
+      "DurationMax": "1.3628044",
+      "MediaRefs": [
+       {
+        "Id": "228078601"
+       },
+       {
+        "Id": "390895152"
+       },
+       {
+        "Id": "509176006"
+       },
+       {
+        "Id": "688516119"
+       }
+      ]
+     },
+     {
+      "Id": "554389286",
+      "Name": "Char_Voice_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_1",
+      "GUID": "{2FFB8A98-6135-4C5C-A3A0-3EBC64ADC5ED}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7839269",
+      "DurationMax": "1.0770793",
+      "MediaRefs": [
+       {
+        "Id": "243920772"
+       }
+      ]
+     },
+     {
+      "Id": "554389285",
+      "Name": "Char_Voice_2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_2",
+      "GUID": "{2CDEC628-B845-477F-8FBA-A42D17D7D620}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.75652885",
+      "DurationMax": "1.3628044",
+      "MediaRefs": [
+       {
+        "Id": "228078601"
+       },
+       {
+        "Id": "390895152"
+       },
+       {
+        "Id": "509176006"
+       },
+       {
+        "Id": "688516119"
+       }
+      ]
+     },
+     {
+      "Id": "554389284",
+      "Name": "Char_Voice_3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_3",
+      "GUID": "{63A3EFB3-44B6-4EF6-B076-45BF35435C16}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.78435946",
+      "DurationMax": "3.0141613",
+      "MediaRefs": [
+       {
+        "Id": "358066055"
+       },
+       {
+        "Id": "377256644"
+       },
+       {
+        "Id": "414764179"
+       },
+       {
+        "Id": "443441612"
+       },
+       {
+        "Id": "448348087"
+       },
+       {
+        "Id": "608457550"
+       },
+       {
+        "Id": "961012535"
+       }
+      ]
+     },
+     {
+      "Id": "554389283",
+      "Name": "Char_Voice_4",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_4",
+      "GUID": "{FBB528EB-46E3-437F-B86F-35E69D06761F}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3082991",
+      "DurationMax": "1.620036",
+      "MediaRefs": [
+       {
+        "Id": "186136113"
+       }
+      ]
+     },
+     {
+      "Id": "554389282",
+      "Name": "Char_Voice_5",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_5",
+      "GUID": "{4DA85F40-5BC0-4E1C-8629-78044A61C6FF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5696555",
+      "DurationMax": "0.65815306",
+      "MediaRefs": [
+       {
+        "Id": "901214739"
+       }
+      ]
+     },
+     {
+      "Id": "554389281",
+      "Name": "Char_Voice_6",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_6",
+      "GUID": "{0CC3E67D-70F8-44CA-9730-5237AE83D5B5}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
+      "MediaRefs": [
+       {
+        "Id": "702250583"
+       }
+      ]
+     },
+     {
+      "Id": "2270224076",
+      "Name": "Evolution",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Evolution",
+      "GUID": "{033C7B62-2459-4B2E-B471-A2EC438227E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.5710223",
+      "DurationMax": "2.097063",
+      "MediaRefs": [
+       {
+        "Id": "371710938"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{AD6F8D52-8F45-DB93-2C4B-68962CFE2D46}"
+ }
+}
