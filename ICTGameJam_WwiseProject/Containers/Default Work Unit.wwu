@@ -392,37 +392,6 @@
 												<ActiveSource Name="Eating_Angry_6" ID="{D9D1F545-4874-4AE0-BE23-930A90ADDD10}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" ShortID="346612350">
-											<PropertyList>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C2ECD7F4-FB69-4040-A1F0-A625C32E9CAA}"/>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DFEEC0A-E766-4B05-BEFA-13A3D1B37445}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1716898F-7883-481A-8960-106174DB4B48}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Eating_AAA" ID="{6BDF7EAF-2E50-47C1-83B9-D3AC4335729C}">
-													<Language>SFX</Language>
-													<AudioFile>GameJam_Sound\Eating\4 Form\AAA &amp; Secret\Eating_AAA.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="448348087"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Eating_AAA" ID="{6BDF7EAF-2E50-47C1-83B9-D3AC4335729C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<Folder Name="AH" ID="{4B054C62-66E5-42DE-BF52-3B28E6EB301C}" ShortID="620065443">
@@ -761,6 +730,82 @@
 								<ActiveSource Name="Eating_Sound" ID="{CBC36294-3F2A-4865-BCAA-F537F11B4F5B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Folder Name="4 Form" ID="{D2E3F872-9C3C-43C7-8777-2F048EC333B0}" ShortID="604827789">
+							<ChildrenList>
+								<Sound Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" ShortID="346612350">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C2ECD7F4-FB69-4040-A1F0-A625C32E9CAA}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DFEEC0A-E766-4B05-BEFA-13A3D1B37445}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{9BC405F8-01CB-4AE0-B4AD-C57BE9D27763}" WorkUnitID="{1716898F-7883-481A-8960-106174DB4B48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Eating_AAA" ID="{6BDF7EAF-2E50-47C1-83B9-D3AC4335729C}">
+											<Language>SFX</Language>
+											<AudioFile>GameJam_Sound\Eating\4 Form\AAA &amp; Secret\Eating_AAA.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="448348087"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Eating_AAA" ID="{6BDF7EAF-2E50-47C1-83B9-D3AC4335729C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="whisper" ID="{77260AE9-0CD0-48F6-94C7-AABDC7FB97CC}" ShortID="451909644">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7DFEEC0A-E766-4B05-BEFA-13A3D1B37445}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1716898F-7883-481A-8960-106174DB4B48}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="165131__blaukreuz__zombie-cuisine" ID="{7E030ACA-A2FA-48A6-821C-F19695AB8F8C}">
+											<Language>SFX</Language>
+											<AudioFile>GameJam_Sound\whisper\165131__blaukreuz__zombie-cuisine.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="298429332"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{35176E6B-C910-457C-9FEF-AAE2FF1FABE4}" ShortID="320575708">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="165131__blaukreuz__zombie-cuisine" ID="{7E030ACA-A2FA-48A6-821C-F19695AB8F8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Laugh" ID="{80F2CEAB-D660-459F-86C6-6C4687E9F366}" ShortID="129989392">

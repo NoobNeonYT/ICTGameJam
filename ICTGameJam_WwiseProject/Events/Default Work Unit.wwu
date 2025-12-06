@@ -14,9 +14,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
 				<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" PersistMode="Reference"/>
+				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
+				<Event Name="Whisper" ID="{B2763FD5-EC8B-4AD0-AAB6-4659EBF8D319}">
+					<ChildrenList>
+						<Action Name="" ID="{2D7C3B7B-B9B2-4877-A549-48E2D1876B24}" ShortID="92192241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="whisper" ID="{77260AE9-0CD0-48F6-94C7-AABDC7FB97CC}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

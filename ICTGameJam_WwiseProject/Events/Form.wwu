@@ -161,6 +161,206 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Char_Voice_7" ID="{6AB36985-DD34-4E4E-A58D-7FE285446CD8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{3875A6D7-58F9-4965-9178-BEB12B0AD284}" ShortID="540889017">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6ECD9919-598B-487A-AB61-535DEF61508E}" ShortID="415365943">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_8" ID="{0B4B8361-BD14-4036-B46D-62C7F4DCFD5B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{EEABDF59-81E9-4B2E-A019-C9B3F0A0B882}" ShortID="666314701">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C341FED5-E1A8-456E-B70A-AEC23A75456C}" ShortID="632305532">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_9" ID="{9ECB09BB-BD43-4186-99CE-14AA4FD57F3A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{5A01DC19-7A2E-49CF-BCC1-0B960C8686BF}" ShortID="289642576">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9CF3EB3A-A3CE-43F5-967F-784B975F0739}" ShortID="1063816327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_10" ID="{4329C592-5A4D-462C-AA9E-FF6661EACE5D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{F539C46E-251E-47AA-8194-3F0DB335295D}" ShortID="486364470">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5E8B2884-BFBC-447B-82B3-9C98B7A909DC}" ShortID="435505167">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_AAA" ID="{61147835-4776-4846-AADB-437D7530AB70}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_11" ID="{8D2D0E29-C1C1-42E2-A769-882FB3573EA4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{037990B7-20A7-497D-880C-821C22FC5F0E}" ShortID="875563117">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HA" ID="{CA8F3C87-94F3-49C2-9915-006E6C879B9F}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{534337D1-E50A-4BFA-BE2D-2753076E967C}" ShortID="1052476207">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HA" ID="{CA8F3C87-94F3-49C2-9915-006E6C879B9F}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_12" ID="{43171E76-C64B-461B-B366-E66C35B4B88C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{37897208-6A2B-4E8B-9F85-7A197F29BB87}" ShortID="536242326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4D7C8C60-DC3A-407B-8AE0-7CDD4BF40C95}" ShortID="754348641">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_13" ID="{37C4EA7B-0F74-4C1F-8B2E-0927CAA2108E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{825BABB6-83B0-408B-A95B-9E4AB217D118}" ShortID="434044620">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1D2ED376-407D-48F7-AF62-B5233C9371AD}" ShortID="507810765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eating_HH" ID="{C464765D-B86D-4FBB-86FF-10B1DB445A12}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Char_Voice_14" ID="{D62267DF-8E88-4DF4-A074-E402A1B5E508}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{3817D053-C128-4E31-9527-9D235A6583E6}" ShortID="1036810318">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AA" ID="{42D5418B-802F-4BCA-9A35-84672015FE8C}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5CDE1903-8206-4945-A34F-1C77AE979A9A}" ShortID="542079519">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AA" ID="{42D5418B-802F-4BCA-9A35-84672015FE8C}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
