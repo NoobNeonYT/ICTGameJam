@@ -1101,6 +1101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grownscript
   isfinalstage: 0
+  nextSceneName: Endingscene
   CharacterList:
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 4ede492952081a54cb5930c168ae359b, type: 3}
@@ -1156,7 +1157,8 @@ MonoBehaviour:
   SumLove: 0
   Grown: 0
   SumGrown: 0
-  timeremain: 60
+  StartTime: 4
+  timeremain: 4
   timerText: {fileID: 921930780}
   timerRunning: 0
   AllAvailableFoods:

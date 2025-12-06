@@ -1131,6 +1131,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235746937}
   m_CullTransparentMesh: 1
+--- !u!1 &1422751181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422751183}
+  - component: {fileID: 1422751182}
+  m_Layer: 0
+  m_Name: ButtonsScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1422751182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422751181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1ac216ef0881e4190e5c642773bb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndingButtons
+  MainMenuButton: {fileID: 1235746939}
+  RestartButton: {fileID: 592296318}
+--- !u!4 &1422751183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422751181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 386.2044, y: 211.03676, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699120428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1221,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155d9c6296b50544ab6b791eac12c221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Endingmanager
-  endmonster: 0
+  DisplayImage: {fileID: 1044781558}
+  DialogueText: {fileID: 905342498}
+  FirstStageVariants:
+  - {fileID: 21300000, guid: 4ede492952081a54cb5930c168ae359b, type: 3}
+  - {fileID: 21300000, guid: 4bf24c577e2e9fe45bd48fb2024e5aa2, type: 3}
+  - {fileID: 21300000, guid: 03bdd3d8e38856d46b57aa072d5a66aa, type: 3}
+  EndingList:
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 4ede492952081a54cb5930c168ae359b, type: 3}
+    Dialogue: 001
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 6988e82bbc32b92409c8eab5661ad080, type: 3}
+    Dialogue: 002
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 0da73d048fd88574f89f9892659f4e59, type: 3}
+    Dialogue: 003
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: edac024474642b44a9aa59259e5265a1, type: 3}
+    Dialogue: 004
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 6548cc9c8c6d6e74884d586fbc29116b, type: 3}
+    Dialogue: 005
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: e463619e1a5920e49a15892e0b5a1045, type: 3}
+    Dialogue: 006
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 2bd8d0e8c69a8e64ba43c5a317f41a50, type: 3}
+    Dialogue: 007
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 2fdf57475f326084e9a53b0ff7f64e58, type: 3}
+    Dialogue: 8
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: ba3319ad85b2437489a06bdbf7d61fc5, type: 3}
+    Dialogue: 9
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 8744ed5082bb4834ea79a64c298ad1e6, type: 3}
+    Dialogue: 10
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: dab8f6b2fe19369448e1568f52e78558, type: 3}
+    Dialogue: 11
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: d9583c1fc49ace84f9d23aedb5e8ee7a, type: 3}
+    Dialogue: 12
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 17da0db17b6d61949af3e31744a431fb, type: 3}
+    Dialogue: 13
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 4c6e387aa0be01448b71acc2f9cece83, type: 3}
+    Dialogue: 14
+  - Name: 
+    CharacterSprite: {fileID: 21300000, guid: 4c6e387aa0be01448b71acc2f9cece83, type: 3}
+    Dialogue: 14
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1185,3 +1282,4 @@ SceneRoots:
   - {fileID: 957902451}
   - {fileID: 235152022}
   - {fileID: 1699120429}
+  - {fileID: 1422751183}

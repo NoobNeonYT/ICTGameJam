@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class FoodItem
@@ -26,19 +27,22 @@ public class Grownscript : MonoBehaviour
 {
     public bool isfinalstage = false;
 
+    [Header("Scene System")]
+    [SerializeField]
+    public string nextSceneName = "SummaryScene";
+
     [Header("Character System")]
     [SerializeField]
     public List<CharacterItem> CharacterList;
 
     [SerializeField]
-    public Image CharacterDisplayImage; // รูปหลักใน Scene
+    public Image CharacterDisplayImage;
 
-    // *** ส่วนที่แก้ไข: เพิ่มรายการรูปสำหรับสุ่มร่างแรก ***
-    [Header("First Stage Random Pool (ใส่รูป 3 แบบของร่างแรกที่นี่)")]
+    [Header("First Stage Random Pool")]
     [SerializeField] public List<Sprite> FirstStageVariants;
 
-    // ตัวแปรเก็บรูปร่างแรกที่สุ่มได้ (เพื่อไม่ให้มันเปลี่ยนไปเปลี่ยนมาระหว่างเล่น)
     private Sprite selectedFirstStageSprite;
+    private int selectedVariantIndex = 0;
 
     public static int currentCharacterIndex = 0;
 
@@ -52,7 +56,12 @@ public class Grownscript : MonoBehaviour
     public int SumGrown = 0;
 
     [Header("Timer System")]
-    public float timeremain = 60f;
+    // *** แก้ไขจุดที่ 1: เพิ่มตัวแปรสำหรับตั้งค่าเวลาเริ่มต้น ***
+    [Tooltip("ใส่เวลาที่ต้องการตรงนี้ (วินาที)")]
+    [SerializeField] public float StartTime = 60f;
+
+    public float timeremain; // ไม่ต้องกำหนดค่าตรงนี้ เดี๋ยวไปรับค่าจาก StartTime เอง
+
     [SerializeField]
     public TextMeshProUGUI timerText;
     public bool timerRunning = false;
@@ -93,14 +102,33 @@ public class Grownscript : MonoBehaviour
 
     void Start()
     {
+        // =========================================================
+        // *** RESET STATS ***
+        // =========================================================
+        currentCharacterIndex = 0;
+        Love = 0;
+        SumLove = 0;
+        Grown = 0;
+        SumGrown = 0;
+
+        // *** แก้ไขจุดที่ 2: ให้เวลารีเซ็ตเท่ากับค่าที่คุณตั้งใน Inspector ***
+        timeremain = StartTime;
+
+        isfinalstage = false;
+
+        PlayerPrefs.DeleteKey("SavedCharacterIndex");
+        PlayerPrefs.DeleteKey("SavedVariantIndex");
+        PlayerPrefs.DeleteKey("SavedLove");
+        PlayerPrefs.DeleteKey("SavedGrown");
+        // =========================================================
+
         timerRunning = true;
 
-        // *** สุ่มรูปร่างแรก ตั้งแต่เริ่มเกมเพียงครั้งเดียว ***
         if (FirstStageVariants != null && FirstStageVariants.Count > 0)
         {
-            int randomIndex = Random.Range(0, FirstStageVariants.Count);
-            selectedFirstStageSprite = FirstStageVariants[randomIndex];
-            Debug.Log("Random First Stage Selected Index: " + randomIndex);
+            selectedVariantIndex = Random.Range(0, FirstStageVariants.Count);
+            selectedFirstStageSprite = FirstStageVariants[selectedVariantIndex];
+            Debug.Log("Game Started/Reset. Random Variant Selected: " + selectedVariantIndex);
         }
 
         SetupFoodButtons();
@@ -110,7 +138,6 @@ public class Grownscript : MonoBehaviour
             targetImage = GetComponent<Image>();
         }
 
-        // อัปเดตรูปตัวละครเริ่มต้น
         UpdateCharacterDisplay(currentCharacterIndex);
 
         if (targetImage != null)
@@ -143,7 +170,32 @@ public class Grownscript : MonoBehaviour
                 timeremain = 0;
                 timerRunning = false;
                 timerText.text = "0";
+
+                SaveAndChangeScene();
             }
+        }
+    }
+
+    void SaveAndChangeScene()
+    {
+        Debug.Log("Time's up! Saving data...");
+
+        PlayerPrefs.SetInt("SavedCharacterIndex", currentCharacterIndex);
+        PlayerPrefs.SetInt("SavedVariantIndex", selectedVariantIndex);
+        PlayerPrefs.SetInt("SavedLove", Love);
+        PlayerPrefs.SetInt("SavedGrown", Grown);
+
+        PlayerPrefs.Save();
+
+        Debug.Log($"Saved Character Index: {currentCharacterIndex}, Variant: {selectedVariantIndex}");
+
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.LogError("ยังไม่ได้ใส่ชื่อ Scene ต่อไปใน Inspector!");
         }
     }
 
@@ -153,29 +205,19 @@ public class Grownscript : MonoBehaviour
         {
             if (CharacterDisplayImage != null)
             {
-                // *** ส่วนที่แก้ไข: ลอจิกการแสดงรูป ***
-
-                if (index == 0) // ถ้าร่างแรก (Index 0)
+                if (index == 0)
                 {
-                    // ให้ใช้รูปที่สุ่มได้ (ถ้ามี)
                     if (selectedFirstStageSprite != null)
-                    {
                         CharacterDisplayImage.sprite = selectedFirstStageSprite;
-                    }
                     else
-                    {
-                        // ถ้าไม่ได้ใส่รูปสุ่มมา ให้ใช้รูป default ใน list เดิม
                         CharacterDisplayImage.sprite = CharacterList[index].CharacterSprite;
-                    }
                 }
-                else // ถ้าร่างอื่นๆ (Index > 0)
+                else
                 {
-                    // ใช้รูปตามลำดับวิวัฒนาการปกติ
                     CharacterDisplayImage.sprite = CharacterList[index].CharacterSprite;
                 }
 
                 Debug.Log("Displayed character: " + CharacterList[index].Name);
-
                 AkSoundEngine.PostEvent("Evolution", gameObject);
 
                 if (index == 8 || index == 9 || index == 10 || index == 11)
@@ -186,12 +228,10 @@ public class Grownscript : MonoBehaviour
                       gameObject,
                       0,
                         AkCurveInterpolation.AkCurveInterpolation_Linear
-                     );
-
+                      );
                     AkSoundEngine.PostEvent("BadEnding", gameObject);
                 }
             }
-
             currentCharacterIndex = index;
             PlayCharacterVoice(currentCharacterIndex);
         }
@@ -201,36 +241,16 @@ public class Grownscript : MonoBehaviour
         }
     }
 
-    // ... (ส่วนที่เหลือ PlayCharacterVoice, OnFoodButtonClick, FeedPet, SetupFoodButtons, CheckEvolution, Effects เหมือนเดิม ไม่ต้องแก้) ...
-
     public void PlayCharacterVoice(int charIndex)
     {
         string newEventName = "Char_Voice_" + charIndex.ToString();
         AkSoundEngine.PostEvent(newEventName, gameObject);
-        Debug.Log($"Wwise: Posting voice event for state: {newEventName}");
     }
+    public void OnFoodButton1Click(int buttonIndex) { HandleFoodClick(buttonIndex); }
+    public void OnFoodButton2Click(int buttonIndex) { HandleFoodClick(buttonIndex); }
+    public void OnFoodButton3Click(int buttonIndex) { HandleFoodClick(buttonIndex); }
 
-    public void OnFoodButton1Click(int buttonIndex)
-    {
-        PlayScalePop();
-        PlayCharacterVoice(currentCharacterIndex);
-        if (isfinalstage) return;
-        if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length) return;
-        FoodItem selectedFood = CurrentRandomFoods[buttonIndex];
-        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
-        SetupFoodButtons();
-    }
-    public void OnFoodButton2Click(int buttonIndex)
-    {
-        PlayScalePop();
-        PlayCharacterVoice(currentCharacterIndex);
-        if (isfinalstage) return;
-        if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length) return;
-        FoodItem selectedFood = CurrentRandomFoods[buttonIndex];
-        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
-        SetupFoodButtons();
-    }
-    public void OnFoodButton3Click(int buttonIndex)
+    void HandleFoodClick(int buttonIndex)
     {
         PlayScalePop();
         PlayCharacterVoice(currentCharacterIndex);
@@ -247,8 +267,6 @@ public class Grownscript : MonoBehaviour
         SumLove += loveAmount;
         Grown += grownAmount;
         SumGrown += grownAmount;
-        Debug.Log($"Pet Fed: Food={currentFoodName}, Love={Love} (Added {loveAmount}), Grown={Grown} (Added {grownAmount})");
-
         if (Grown >= CharacterList[currentCharacterIndex].RequiredGrown)
         {
             CheckEvolution();
@@ -258,11 +276,7 @@ public class Grownscript : MonoBehaviour
 
     public void SetupFoodButtons()
     {
-        if (AllAvailableFoods.Count < 3 || FoodButtonImages.Length < 3)
-        {
-            Debug.LogError("Need at least 3 foods and 3 button images!");
-            return;
-        }
+        if (AllAvailableFoods.Count < 3 || FoodButtonImages.Length < 3) return;
         FoodItem[] randomSelection = AllAvailableFoods.OrderBy(x => Random.value).Take(3).ToArray();
         for (int i = 0; i < 3; i++)
         {
@@ -275,7 +289,6 @@ public class Grownscript : MonoBehaviour
     {
         Love = 0;
         Grown = 0;
-        Debug.Log("Stats Reset for next evolution stage.");
     }
 
     public void CheckEvolution()
@@ -299,9 +312,7 @@ public class Grownscript : MonoBehaviour
             case 13:
             case 14:
                 isfinalstage = true;
-                Debug.Log("Max Evolution Reached (Stage 4)!");
                 break;
-            default: Debug.LogWarning("Index นี้ไม่อยู่ในเงื่อนไขการวิวัฒนาการ"); break;
         }
 
         if (nextIndex != -1 && !isfinalstage)
