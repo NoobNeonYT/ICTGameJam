@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0A6CD704-91D8-46DC-8CA0-5783C47D9EDF}" SchemaVersion="133">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{0A6CD704-91D8-46DC-8CA0-5783C47D9EDF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0A6CD704-91D8-46DC-8CA0-5783C47D9EDF}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="SumLove" ID="{CD253263-259C-4130-A788-463FA966EDA9}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-50"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
