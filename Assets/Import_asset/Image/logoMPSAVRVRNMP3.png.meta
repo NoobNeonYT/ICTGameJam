@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 8653e057d30552d47bb26a043b81148c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3550138792965638577
+    second: logoMPSAVRVRNMP3_0
+  - first:
+      213: -8337150505836075560
+    second: logoMPSAVRVRNMP3_1
+  - first:
+      213: 9105559873942460221
+    second: logoMPSAVRVRNMP3_2
+  - first:
+      213: -2799820695152272729
+    second: logoMPSAVRVRNMP3_3
+  - first:
+      213: -5714258870259970271
+    second: logoMPSAVRVRNMP3_4
+  - first:
+      213: 6783350450923736065
+    second: logoMPSAVRVRNMP3_5
+  - first:
+      213: 2114640154918103707
+    second: logoMPSAVRVRNMP3_6
+  - first:
+      213: 3793153432728645515
+    second: logoMPSAVRVRNMP3_7
+  - first:
+      213: -6014486577408055118
+    second: logoMPSAVRVRNMP3_8
+  - first:
+      213: -4171292180861403158
+    second: logoMPSAVRVRNMP3_9
+  - first:
+      213: -1905976776646358046
+    second: logoMPSAVRVRNMP3_10
+  - first:
+      213: 7339338953844841713
+    second: logoMPSAVRVRNMP3_11
+  - first:
+      213: -4743072155367039694
+    second: logoMPSAVRVRNMP3_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 378
+        width: 446
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b90d0a3c60a44130800000000000000
+      internalID: 3550138792965638577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 570
+        width: 646
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d52cac79cd7c4c80800000000000000
+      internalID: -8337150505836075560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_2
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 419
+        width: 230
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37146746727d5e70800000000000000
+      internalID: 9105559873942460221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 300
+        width: 70
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa59ae69e90529d0800000000000000
+      internalID: -2799820695152272729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 328
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f878b35dfd2b0b0800000000000000
+      internalID: -5714258870259970271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 343
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c8b4e9b4d432e50800000000000000
+      internalID: 6783350450923736065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 339
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9aabad5406b85d10800000000000000
+      internalID: 2114640154918103707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 356
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f285833fcf3a430800000000000000
+      internalID: 3793153432728645515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 343
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8ec3fe250488ca0800000000000000
+      internalID: -6014486577408055118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_9
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 338
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef3469acd79c16c0800000000000000
+      internalID: -4171292180861403158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 328
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb89dd483c9c85e0800000000000000
+      internalID: -1905976776646358046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 316
+        width: 42
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcdb1e94e19ad560800000000000000
+      internalID: 7339338953844841713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP3_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 380
+        width: 238
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d1d4b21093d2eb0800000000000000
+      internalID: -4743072155367039694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logoMPSAVRVRNMP3_0: 3550138792965638577
+      logoMPSAVRVRNMP3_1: -8337150505836075560
+      logoMPSAVRVRNMP3_10: -1905976776646358046
+      logoMPSAVRVRNMP3_11: 7339338953844841713
+      logoMPSAVRVRNMP3_12: -4743072155367039694
+      logoMPSAVRVRNMP3_2: 9105559873942460221
+      logoMPSAVRVRNMP3_3: -2799820695152272729
+      logoMPSAVRVRNMP3_4: -5714258870259970271
+      logoMPSAVRVRNMP3_5: 6783350450923736065
+      logoMPSAVRVRNMP3_6: 2114640154918103707
+      logoMPSAVRVRNMP3_7: 3793153432728645515
+      logoMPSAVRVRNMP3_8: -6014486577408055118
+      logoMPSAVRVRNMP3_9: -4171292180861403158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
