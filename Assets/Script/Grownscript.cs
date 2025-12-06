@@ -1,25 +1,25 @@
-﻿using System.Collections.Generic; // สำหรับการใช้ List
-using System.Linq; // สำหรับการสุ่มที่ไม่ซ้ำ (.OrderBy().Take())
+﻿using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI; // ต้องเพิ่มเพื่อใช้ Image Component
+using UnityEngine.UI;
 using System.Collections;
 
 [System.Serializable]
 public class FoodItem
 {
     public string Name;
-    public int LoveValue = 0;   // อาหารดี Love เป็น +, อาหารแย่ Love เป็น -
+    public int LoveValue = 0;
     public int GrownValue = 0;
-    public Sprite FoodSprite; // รูปภาพของอาหาร
+    public Sprite FoodSprite;
 }
 
 [System.Serializable]
 public class CharacterItem
 {
-    public string Name; // ชื่อตัวละคร
-    public Sprite CharacterSprite; // รูปภาพของตัวละครขั้นนี้
-    public int RequiredGrown; // ค่า Grown ที่ต้องมีเพื่อเปลี่ยนร่าง
+    public string Name;
+    public Sprite CharacterSprite;
+    public int RequiredGrown;
 }
 
 public class Grownscript : MonoBehaviour
@@ -28,44 +28,55 @@ public class Grownscript : MonoBehaviour
 
     [Header("Character System")]
     [SerializeField]
-    public List<CharacterItem> CharacterList; // ลิสต์เก็บข้อมูลตัวละครทุกร่าง
+    public List<CharacterItem> CharacterList;
 
     [SerializeField]
-    public Image CharacterDisplayImage; // ที่แสดงรูปตัวละคร
+    public Image CharacterDisplayImage;
 
-    // Index ของตัวละครที่กำลังแสดงผล (เริ่มต้นที่ 0 = ร่างแรก)
     private int currentCharacterIndex = 0;
 
     [Header("Stats")]
     [SerializeField]
-    public int Love = 0;                // ค่ารัก (ใช้กำหนดเส้นทางวิวัฒนาการ)
-    public int SumLove = 0;             // รวมค่ารักทั้งหมด (เก็บสถิติ)
+    public int Love = 0;
+    public int SumLove = 0;
 
     [SerializeField]
-    public int Grown = 0;               // ค่าการเจริญเติบโต (ใช้กำหนดเวลาเปลี่ยนร่าง)
-    public int SumGrown = 0;            // รวมค่าการเจริญเติบโต
+    public int Grown = 0;
+    public int SumGrown = 0;
 
     [Header("Timer System")]
-    public float timeremain = 60f;      // เวลาที่เหลือ
+    public float timeremain = 60f;
     [SerializeField]
-    public TextMeshProUGUI timerText;   // ข้อความแสดงเวลา
+    public TextMeshProUGUI timerText;
     public bool timerRunning = false;
 
     [Header("Food System")]
     [SerializeField]
     public List<FoodItem> AllAvailableFoods;
 
-    // เก็บอาหาร 3 อย่างที่สุ่มมาปัจจุบัน
     private FoodItem[] CurrentRandomFoods = new FoodItem[3];
 
     [SerializeField]
-    public Image[] FoodButtonImages = new Image[3]; // ปุ่มกดอาหาร 3 ปุ่ม
+    public Image[] FoodButtonImages = new Image[3];
+
+    [Header("Effect System")]
+    [SerializeField]
+    private Image targetImage;
+    [SerializeField] private float effectDuration = 1.6f;
+    [SerializeField] private float animationDuration = 0.5f;
+    [SerializeField] private float scaleFactor = 2f;
+    [SerializeField] private float scalePopFactor = 1.2f;
+    [SerializeField] private Color effectColor = Color.black;
+    [SerializeField] private Color finalColor = Color.white;
+
+    private Color originalColor;
+    private Vector3 originalScale;
+    private Vector3 originalanimationscale;
 
     void Start()
     {
         timerRunning = true;
 
-        // เริ่มต้นระบบ
         SetupFoodButtons();
         UpdateCharacterDisplay(currentCharacterIndex);
 
@@ -76,42 +87,36 @@ public class Grownscript : MonoBehaviour
 
         if (targetImage != null)
         {
-            // *** 1. เก็บสีเดิม (สีขาว/สีที่ต้องการให้เป็นสุดท้าย) ***
             originalColor = targetImage.color;
-
-            // *** 2. กำหนดให้รูปเป็นสีดำตั้งแต่เริ่มต้น (ตามที่ผู้ใช้ต้องการ) ***
             targetImage.color = effectColor;
         }
         originalScale = transform.localScale;
+        originalanimationscale = targetImage.transform.localScale;
 
         PlayPopEffect();
     }
 
-
-        void Update()
-        {
-            if (timerRunning)
-            {
-                if (timeremain > 0)
-                {
-                    timeremain -= Time.deltaTime;
-                    timerText.text = "" + Mathf.Round(timeremain).ToString() + "";
-                }
-                else
-                {
-                    timeremain = 0;
-                    timerRunning = false;
-                    timerText.text = "0";
-                }
-            }
-
-        }
-    
-
-    // ฟังก์ชันเมื่อกดปุ่มอาหาร (ผูกกับปุ่มใน Unity)
-    public void OnFoodButtonClick(int buttonIndex)
+    void Update()
     {
-        // ถ้าร่างสุดท้ายแล้ว ไม่ต้องทำอะไร (หรือจะให้กินได้แต่ไม่เปลี่ยนร่างก็ได้)
+        if (timerRunning)
+        {
+            if (timeremain > 0)
+            {
+                timeremain -= Time.deltaTime;
+                timerText.text = Mathf.Round(timeremain).ToString();
+            }
+            else
+            {
+                timeremain = 0;
+                timerRunning = false;
+                timerText.text = "0";
+            }
+        }
+    }
+
+    public void OnFoodButton1Click(int buttonIndex)
+    {
+        PlayScalePop();
         if (isfinalstage) return;
 
         if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
@@ -120,48 +125,87 @@ public class Grownscript : MonoBehaviour
             return;
         }
 
-        // ดึงข้อมูลอาหารจากปุ่มที่กด
         FoodItem selectedFood = CurrentRandomFoods[buttonIndex];
 
-        // ให้อาหาร
-        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue);
+        // *** แก้ไข 1: ส่ง selectedFood.Name เข้าไปด้วย ***
+        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
 
-        // สุ่มอาหารชุดใหม่
         SetupFoodButtons();
     }
 
-    public void FeedPet(int loveAmount, int grownAmount)
+
+    public void OnFoodButton2Click(int buttonIndex)
+    {
+        PlayScalePop();
+
+        if (isfinalstage) return;
+
+        if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
+        {
+            Debug.LogError("Invalid button index: " + buttonIndex);
+            return;
+        }
+
+        FoodItem selectedFood = CurrentRandomFoods[buttonIndex];
+
+        // *** แก้ไข 1: ส่ง selectedFood.Name เข้าไปด้วย ***
+        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
+
+        SetupFoodButtons();
+        
+
+
+    }
+    public void OnFoodButton3Click(int buttonIndex)
+    {
+        PlayScalePop();
+
+        if (isfinalstage) return;
+
+        if (buttonIndex < 0 || buttonIndex >= CurrentRandomFoods.Length)
+        {
+            Debug.LogError("Invalid button index: " + buttonIndex);
+            return;
+        }
+
+        FoodItem selectedFood = CurrentRandomFoods[buttonIndex];
+
+        // *** แก้ไข 1: ส่ง selectedFood.Name เข้าไปด้วย ***
+        FeedPet(selectedFood.LoveValue, selectedFood.GrownValue, selectedFood.Name);
+
+        SetupFoodButtons();
+    }
+
+
+    // *** แก้ไข 2: เพิ่ม parameter 'string currentFoodName' เพื่อรับชื่ออาหาร ***
+    public void FeedPet(int loveAmount, int grownAmount, string currentFoodName)
     {
         Love += loveAmount;
         SumLove += loveAmount;
         Grown += grownAmount;
         SumGrown += grownAmount;
 
-        Debug.Log($"Pet Fed: Love={Love}, Grown={Grown}");
+        // *** แก้ไข 3: แสดงชื่ออาหารใน Debug Log ***
+        Debug.Log($"Pet Fed: Food={currentFoodName}, Love={Love} (Added {loveAmount}), Grown={Grown} (Added {grownAmount})");
 
-        // เช็คว่าโตพอจะเปลี่ยนร่างหรือยัง
         if (Grown >= CharacterList[currentCharacterIndex].RequiredGrown)
         {
             CheckEvolution();
-            
-                PlayPopEffect();
-           
+            PlayPopEffect();
         }
     }
 
     public void SetupFoodButtons()
     {
-        // ตรวจสอบความพร้อม
         if (AllAvailableFoods.Count < 3 || FoodButtonImages.Length < 3)
         {
             Debug.LogError("Need at least 3 foods and 3 button images!");
             return;
         }
 
-        // สุ่มอาหาร 3 อย่างจากลิสต์ทั้งหมด
         FoodItem[] randomSelection = AllAvailableFoods
-            .OrderBy(x => Random.value) // สุ่มลำดับ
-            .Take(3) // เอามา 3 อัน
+            .OrderBy(x => Random.value)
+            .Take(3)
             .ToArray();
 
         for (int i = 0; i < 3; i++)
@@ -177,7 +221,6 @@ public class Grownscript : MonoBehaviour
 
     public void UpdateCharacterDisplay(int index)
     {
-        // ตรวจสอบว่า Index อยู่ในขอบเขต List
         if (index >= 0 && index < CharacterList.Count)
         {
             if (CharacterDisplayImage != null)
@@ -197,7 +240,6 @@ public class Grownscript : MonoBehaviour
         Love = 0;
         Grown = 0;
         Debug.Log("Stats Reset for next evolution stage.");
-
     }
 
     public void CheckEvolution()
@@ -206,54 +248,41 @@ public class Grownscript : MonoBehaviour
 
         switch (currentCharacterIndex)
         {
-            // =========================================================
-            // RAGE 1 (Start)
-            // =========================================================
             case 0:
-                if (Love >= 0) nextIndex = 2; // ไปสายดี
-                else nextIndex = 1;           // ไปสายร้าย
-                
+                if (Love >= 0) nextIndex = 2;
+                else nextIndex = 1;
                 break;
 
-            // =========================================================
-            // RAGE 2 (Evolution 1)
-            // =========================================================
-            case 1: // มาจากสายร้าย
-                if (Love >= 0) nextIndex = 4; // กลับใจ
-                else nextIndex = 3;           // ร้ายต่อ
+            case 1:
+                if (Love >= 0) nextIndex = 4;
+                else nextIndex = 3;
                 break;
 
-            case 2: // มาจากสายดี
-                if (Love >= 0) nextIndex = 6; // ดีต่อ
-                else nextIndex = 5;           // เริ่มเสีย
+            case 2:
+                if (Love >= 0) nextIndex = 6;
+                else nextIndex = 5;
                 break;
 
-            // =========================================================
-            // RAGE 3 (Evolution 2) -> ตอนนี้จะวิวัฒนาการต่อได้แล้ว
-            // =========================================================
-            case 3: // (ร้าย->ดี)
-                if (Love >= 0) nextIndex = 8;  // (ร้าย->ดี)->ดี
-                else nextIndex = 7;            // (ร้าย->ดี)->ร้าย
+            case 3:
+                if (Love >= 0) nextIndex = 8;
+                else nextIndex = 7;
                 break;
 
-            case 4: // (ร้าย->ร้าย)
-                if (Love >= 0) nextIndex = 10;  // (ร้าย->ร้าย)->ดี
-                else nextIndex = 9;           // (ร้าย->ร้าย)->ร้าย
+            case 4:
+                if (Love >= 0) nextIndex = 10;
+                else nextIndex = 9;
                 break;
 
-            case 5: // (ดี->ร้าย)
-                if (Love >= 0) nextIndex = 12; // (ดี->ร้าย)->ดี
-                else nextIndex = 11;           // (ดี->ร้าย)->ร้าย
+            case 5:
+                if (Love >= 0) nextIndex = 12;
+                else nextIndex = 11;
                 break;
 
-            case 6: // (ดี->ดี)
-                if (Love >= 0) nextIndex = 14; // (ดี->ดี)->ดี
-                else nextIndex = 13;           // (ดี->ดี)->ร้าย
+            case 6:
+                if (Love >= 0) nextIndex = 14;
+                else nextIndex = 13;
                 break;
 
-            // =========================================================
-            // RAGE 4 (Final Stage) -> ร่างสุดท้ายจริงๆ อยู่ตรงนี้
-            // =========================================================
             case 7:
             case 8:
             case 9:
@@ -275,21 +304,10 @@ public class Grownscript : MonoBehaviour
         {
             currentCharacterIndex = nextIndex;
             UpdateCharacterDisplay(currentCharacterIndex);
-            ResetStats(); 
+            ResetStats();
         }
     }
 
-    [SerializeField]
-    private Image targetImage; // ลาก Image Component มาใส่ใน Inspector
-
-    // การตั้งค่า Effect
-    [SerializeField] private float effectDuration = 1.6f; // ระยะเวลาทั้งหมด (เร็วๆ)
-    [SerializeField] private float scaleFactor = 2f;    // ขนาดที่ใหญ่ขึ้น (200%)
-    [SerializeField] private Color effectColor = Color.black; // สีเริ่มต้น (สีดำ)
-    [SerializeField] private Color finalColor = Color.white; // สีสุดท้ายที่ต้องการให้เฟดไป (สีขาว)
-
-    private Color originalColor;
-    private Vector3 originalScale;
     public void PlayPopEffect()
     {
         if (targetImage == null)
@@ -299,7 +317,6 @@ public class Grownscript : MonoBehaviour
         }
 
         StopAllCoroutines();
-        // ไม่ต้องเปลี่ยนสีเป็นดำอีก เพราะ Start() ตั้งค่าไว้แล้ว
         StartCoroutine(PopEffectRoutine());
     }
 
@@ -307,33 +324,58 @@ public class Grownscript : MonoBehaviour
     {
         float timer = 0f;
 
-        // วนลูปไปตลอดระยะเวลา Effect
         while (timer < effectDuration)
         {
             timer += Time.deltaTime;
-            // t คือ Progress รวม 0 ถึง 1 ตลอด effectDuration
             float t = timer / effectDuration;
 
-            // ==========================================================
-            // 1. Color Fade: เฟดจาก effectColor (ดำ) ไป originalColor (ขาว/สีเดิม)
-            // ==========================================================
-            // Color.Lerp จะเปลี่ยนสีไปเรื่อยๆ ตั้งแต่ t=0 จนถึง t=1
             targetImage.color = Color.Lerp(effectColor, originalColor, t);
 
-            // ==========================================================
-            // 2. Scale Pop: ขยายและหดกลับในเวลาเดียวกัน
-            // ==========================================================
-            // Mathf.PingPong(t * 2f, 1f) จะสร้างค่า 0 -> 1 -> 0 ตลอดระยะเวลา t=0 ถึง t=1
             float scaleT = Mathf.PingPong(t * 2.0f, 1.0f);
-
-            // Scale: จากขนาดเดิม (t=0) ไปขนาดใหญ่สุด (t=0.5) แล้วกลับมาขนาดเดิม (t=1)
             transform.localScale = Vector3.Lerp(originalScale, originalScale * scaleFactor, scaleT);
 
             yield return null;
         }
 
-        // 3. ตั้งค่าสุดท้ายให้แม่นยำ
         targetImage.color = originalColor;
         transform.localScale = originalScale;
     }
+
+
+    public void PlayScalePop()
+    {
+        // หยุด Coroutine เดิม (ถ้ามี) ก่อนเริ่ม Coroutine ใหม่
+        StopAllCoroutines();
+        StartCoroutine(ScalePopRoutine(animationDuration, scalePopFactor));
+    }
+
+    private IEnumerator ScalePopRoutine(float duration, float targetScaleFactor)
+    {
+        // 1. ตั้งค่าเริ่มต้น
+        Vector3 startScale = originalanimationscale;
+        Vector3 peakScale = originalanimationscale * targetScaleFactor;
+        float timer = 0f;
+
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+
+            // progress: ค่า 0 ถึง 1 ตามระยะเวลา
+            float progress = timer / duration;
+
+            // Mathf.PingPong: ทำให้ค่า progress เป็น 0 -> 1 -> 0
+            // โดยเราคูณ progress ด้วย 2.0f เพื่อให้มันวิ่งไป-กลับใน duration ที่กำหนด
+            float pingPongValue = Mathf.PingPong(progress * 2.0f, 1.0f);
+
+            // 2. ปรับขนาด
+            // Lerp จะวิ่งจาก startScale (0) ไป peakScale (1) แล้วกลับมา startScale (0)
+            targetImage.transform.localScale = Vector3.Lerp(startScale, peakScale, pingPongValue);
+
+            yield return null;
+        }
+
+        // 3. กำหนดค่าสุดท้ายให้เป็นขนาดเดิมเป๊ะ
+        targetImage.transform.localScale = originalanimationscale;
+    }
 }
+
