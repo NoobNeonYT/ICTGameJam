@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 3c5ab40a083be9d40bf726c3f960577e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -674613820521225922
+    second: logoMPSAVRVRNMP_0
+  - first:
+      213: -8121699119582120770
+    second: logoMPSAVRVRNMP_1
+  - first:
+      213: 5801916383201933809
+    second: logoMPSAVRVRNMP_2
+  - first:
+      213: 4854342160574071708
+    second: logoMPSAVRVRNMP_3
+  - first:
+      213: -6806300131436816065
+    second: logoMPSAVRVRNMP_4
+  - first:
+      213: -1989427582583494016
+    second: logoMPSAVRVRNMP_5
+  - first:
+      213: 3646667139780597895
+    second: logoMPSAVRVRNMP_6
+  - first:
+      213: -3577854314193135388
+    second: logoMPSAVRVRNMP_7
+  - first:
+      213: -959817556104621954
+    second: logoMPSAVRVRNMP_8
+  - first:
+      213: -534474670240843858
+    second: logoMPSAVRVRNMP_9
+  - first:
+      213: -2434543081471715834
+    second: logoMPSAVRVRNMP_10
+  - first:
+      213: 6013843896295341496
+    second: logoMPSAVRVRNMP_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_0
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 376
+        width: 454
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e316343fd4a43a6f0800000000000000
+      internalID: -674613820521225922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 571
+        width: 640
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb474bc6eade94f80800000000000000
+      internalID: -8121699119582120770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_2
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 426
+        width: 230
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9354de53c848050800000000000000
+      internalID: 5801916383201933809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 298
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c934833c9761e5340800000000000000
+      internalID: 4854342160574071708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_4
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 330
+        width: 39
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39930f771a2b81a0800000000000000
+      internalID: -6806300131436816065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 338
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a2fb177222464e0800000000000000
+      internalID: -1989427582583494016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_6
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 354
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78856b851709b9230800000000000000
+      internalID: 3646667139780597895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_7
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 345
+        width: 33
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e85b602578e85ec0800000000000000
+      internalID: -3577854314193135388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_8
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 340
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70533f940b0ea2f0800000000000000
+      internalID: -959817556104621954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 327
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7b9d28e1a2598f0800000000000000
+      internalID: -534474670240843858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_10
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 315
+        width: 48
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6065e7657f3c63ed0800000000000000
+      internalID: -2434543081471715834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoMPSAVRVRNMP_11
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 382
+        width: 235
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdb5553927757350800000000000000
+      internalID: 6013843896295341496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logoMPSAVRVRNMP_0: -674613820521225922
+      logoMPSAVRVRNMP_1: -8121699119582120770
+      logoMPSAVRVRNMP_10: -2434543081471715834
+      logoMPSAVRVRNMP_11: 6013843896295341496
+      logoMPSAVRVRNMP_2: 5801916383201933809
+      logoMPSAVRVRNMP_3: 4854342160574071708
+      logoMPSAVRVRNMP_4: -6806300131436816065
+      logoMPSAVRVRNMP_5: -1989427582583494016
+      logoMPSAVRVRNMP_6: 3646667139780597895
+      logoMPSAVRVRNMP_7: -3577854314193135388
+      logoMPSAVRVRNMP_8: -959817556104621954
+      logoMPSAVRVRNMP_9: -534474670240843858
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
