@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" SchemaVersion="133" RootDocumentID="{7A061427-90BC-4629-A8B2-25465C27520E}" ParentDocumentID="{7A061427-90BC-4629-A8B2-25465C27520E}">
+	<Events>
+		<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" OwnerID="{7A061427-90BC-4629-A8B2-25465C27520E}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="CutscenceAmbient" ID="{58882766-C156-4E8E-B516-B4D0B1611725}">
+					<ChildrenList>
+						<Action Name="" ID="{DEF566B8-1CCD-4AD5-A953-AF0B9D8A7437}" ShortID="737056689">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Nature" ID="{797F3CC6-355C-4097-9629-DB044315AC11}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FD44FD17-35C7-42CB-AFD5-CDE7F443DB73}" ShortID="1030752831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bird_Nature" ID="{797F3CC6-355C-4097-9629-DB044315AC11}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AwakeSound" ID="{4A417708-69EC-4E2E-935C-FC6C21C4F906}">
+					<ChildrenList>
+						<Action Name="" ID="{BE5B91A2-40C9-44BD-B822-CA93D70041BE}" ShortID="1048457459">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Awakening" ID="{DC6DC024-3DE9-4A50-9B95-9D7874FBDC25}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6503D2A0-6CD4-49A5-BCBD-1B14360DE623}" ShortID="1057637815">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Awakening" ID="{DC6DC024-3DE9-4A50-9B95-9D7874FBDC25}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BadEnding" ID="{EA4DC730-214C-4876-8F4F-0EE6590954A9}">
+					<ChildrenList>
+						<Action Name="" ID="{781C52CE-4902-4180-B981-2ED0EE497D6E}" ShortID="1013002318">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bad End" ID="{511C81A7-CDAC-4816-9E26-E39252CB78BF}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8C793C78-260A-40E2-BB0A-A73A264D19D7}" ShortID="826893861">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bad End" ID="{511C81A7-CDAC-4816-9E26-E39252CB78BF}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
