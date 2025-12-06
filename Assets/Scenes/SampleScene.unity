@@ -505,7 +505,7 @@ RectTransform:
   m_GameObject: {fileID: 625580886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1052410417}
@@ -513,7 +513,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: -185, y: 0.0000038147}
+=======
+  m_AnchoredPosition: {x: -225, y: 0.0000038147}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 107.8452, y: 103.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &625580888
@@ -676,15 +680,19 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
   m_LocalScale: {x: 4.517199, y: 4.517199, z: 4.517199}
+=======
+  m_LocalScale: {x: 4.798148, y: 4.798148, z: 4.798148}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1557638707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 17}
+  m_AnchoredPosition: {x: 7, y: 89}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &793255550
@@ -724,9 +732,13 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SizeDelta: {x: 100, y: 100}
 =======
   m_SizeDelta: {x: 960, y: 540}
+>>>>>>> Stashed changes
+=======
+  m_SizeDelta: {x: 950, y: 540}
 >>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &921930778
@@ -768,9 +780,13 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 869, y: 441}
 =======
   m_AnchoredPosition: {x: 511, y: 202}
+>>>>>>> Stashed changes
+=======
+  m_AnchoredPosition: {x: 1332, y: 699}
 >>>>>>> Stashed changes
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -974,6 +990,7 @@ MonoBehaviour:
   timerText: {fileID: 921930780}
   timerRunning: 0
   AllAvailableFoods:
+<<<<<<< Updated upstream
   - Name: Food1
     LoveValue: 1
     GrownValue: 3
@@ -1008,8 +1025,80 @@ MonoBehaviour:
     FoodSprite: {fileID: -177032605065898780, guid: 5f3d333b353ef3648887f6de74e4489c, type: 3}
   - Name: Food9
     LoveValue: 4
+=======
+  - Name: watermelon
+    LoveValue: -1
     GrownValue: 1
-    FoodSprite: {fileID: 5803354974798969303, guid: cd09c2a615bd19c46946823bc8a698f5, type: 3}
+    FoodSprite: {fileID: -6685673640782889408, guid: 6ae267bc20d84c94e96ee1ef32a3804f, type: 3}
+  - Name: steak
+    LoveValue: 4
+    GrownValue: 2
+    FoodSprite: {fileID: 2343426861448146176, guid: 21d186f608b978e48819f2c4fa7f0d5f, type: 3}
+  - Name: rat
+    LoveValue: -9
+    GrownValue: 2
+    FoodSprite: {fileID: 2981699071720173372, guid: 9afbbbdeb6a99fc41a63e76dbb198248, type: 3}
+  - Name: pancake
+    LoveValue: 1
+    GrownValue: 2
+    FoodSprite: {fileID: 8230478071672653583, guid: 391a2f39b911b8442a4f7a1fc2ca01db, type: 3}
+  - Name: poop
+    LoveValue: -4
+    GrownValue: 1
+    FoodSprite: {fileID: -2941620665475676723, guid: 8571bc47b699d194ab5565ca24ea3fe0, type: 3}
+  - Name: icecream
+    LoveValue: 1
+    GrownValue: 1
+    FoodSprite: {fileID: 1120362639445743916, guid: 483647be1f5461d4381fd1cdc27444c9, type: 3}
+  - Name: bug
+    LoveValue: -3
+    GrownValue: 2
+    FoodSprite: {fileID: 6796656825888281025, guid: 1cdf349218c404b408b17a332e374012, type: 3}
+  - Name: meatsteak
+    LoveValue: 5
+    GrownValue: 3
+    FoodSprite: {fileID: 7150393733787059276, guid: 321bd740c9f4a974c88036d55b6ae605, type: 3}
+  - Name: fish
+    LoveValue: -4
+    GrownValue: 1
+    FoodSprite: {fileID: -4679344462880229567, guid: 5f29548926d5eee4eb7d8ba6d50b35e1, type: 3}
+  - Name: fruit
+    LoveValue: 1
+    GrownValue: 1
+    FoodSprite: {fileID: -3341314579871251669, guid: d5fc0358c26ed8846aab0178171dd260, type: 3}
+  - Name: chocolate
+    LoveValue: -1
+    GrownValue: 1
+    FoodSprite: {fileID: -7671853098862355828, guid: 4d92356e97671894aa2699e0510fc4cd, type: 3}
+  - Name: pudding
+    LoveValue: 2
+    GrownValue: 1
+    FoodSprite: {fileID: 7992605771214575141, guid: 8b6b701dab99f6449bd086b5ae8d9c5b, type: 3}
+  - Name: cake
+    LoveValue: 3
+    GrownValue: 1
+    FoodSprite: {fileID: -4577942512120550205, guid: aee86eeedfffa8a46a1694f841f839b4, type: 3}
+  - Name: salad
+    LoveValue: -2
+    GrownValue: 3
+    FoodSprite: {fileID: -5343909469917258292, guid: 363231eddbe28fc4db67c3270b3424cb, type: 3}
+  - Name: chicken
+    LoveValue: 3
+    GrownValue: 2
+    FoodSprite: {fileID: -6689015890456219937, guid: 42fcaf7e26111f74185b14ef7230e9cf, type: 3}
+  - Name: salmon
+    LoveValue: 3
+>>>>>>> Stashed changes
+    GrownValue: 1
+    FoodSprite: {fileID: -6491209959015782822, guid: e35e5cc9be61f0a4e908432ede3648fd, type: 3}
+  - Name: burger
+    LoveValue: 3
+    GrownValue: 2
+    FoodSprite: {fileID: -7874307153793175862, guid: 796a2bb2ff1dc7340bc8c3644bb49502, type: 3}
+  - Name: snake
+    LoveValue: -3
+    GrownValue: 2
+    FoodSprite: {fileID: 6488545241393881865, guid: d479ac358a0dcf349b73f8126aa1501b, type: 3}
   FoodButtonImages:
   - {fileID: 625580889}
   - {fileID: 1891223668}
@@ -1179,9 +1268,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalScale: {x: 1, y: 1, z: 1}
 =======
   m_LocalScale: {x: 0.8815669, y: 0.8815669, z: 0.8815669}
+>>>>>>> Stashed changes
+=======
+  m_LocalScale: {x: 1.8116603, y: 1.8116603, z: 1.8116603}
 >>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1192,7 +1285,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 15, y: -189}
+=======
+  m_AnchoredPosition: {x: 16.118, y: -336}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: -1321.9929, y: -903.1438}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099314780
@@ -1261,7 +1358,7 @@ RectTransform:
   m_GameObject: {fileID: 1226464855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1430483424}
@@ -1269,7 +1366,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 195, y: 0.0000038147}
+=======
+  m_AnchoredPosition: {x: 230, y: 0.0000038147}
+>>>>>>> Stashed changes
   m_SizeDelta: {x: 107.8452, y: 103.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226464857
@@ -1713,7 +1814,7 @@ RectTransform:
   m_GameObject: {fileID: 1891223665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 301902520}
@@ -1845,7 +1946,7 @@ RectTransform:
   m_GameObject: {fileID: 2143458395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.39453396, y: 0.39453396, z: 0.39453396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1099314779}
@@ -1854,7 +1955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -21, y: -57}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143458397
