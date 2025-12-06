@@ -882,7 +882,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 950, y: 540}
+  m_SizeDelta: {x: 960, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793255552
 MonoBehaviour:
@@ -1148,6 +1148,10 @@ MonoBehaviour:
     CharacterSprite: {fileID: 21300000, guid: 448bd9730ff0b6d4f9fee711e83ae3c8, type: 3}
     RequiredGrown: 80
   CharacterDisplayImage: {fileID: 771260028}
+  FirstStageVariants:
+  - {fileID: 21300000, guid: 4ede492952081a54cb5930c168ae359b, type: 3}
+  - {fileID: 21300000, guid: 4bf24c577e2e9fe45bd48fb2024e5aa2, type: 3}
+  - {fileID: 21300000, guid: 03bdd3d8e38856d46b57aa072d5a66aa, type: 3}
   Love: 0
   SumLove: 0
   Grown: 0
