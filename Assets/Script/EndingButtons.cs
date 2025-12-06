@@ -8,6 +8,14 @@ public class EndingButtons : MonoBehaviour
     public Button MainMenuButton; // ช่องใส่ปุ่มกลับเมนู
     public Button RestartButton;  // ช่องใส่ปุ่มเล่นใหม่
 
+    void Awake()
+    {
+
+        AkSoundEngine.LoadBank("UISoundBank", out uint uiBankID);
+        AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
+
+        
+    }
     void Start()
     {
         // สั่งให้โค้ดทำงานเมื่อกดปุ่ม (AddListener)
@@ -28,12 +36,15 @@ public class EndingButtons : MonoBehaviour
         PlayerPrefs.Save(); // บันทึกข้อมูล
         Debug.Log("Go to Main Menu");
         SceneManager.LoadScene("MainMenu"); // อย่าลืมเปลี่ยนชื่อ Scene ให้ตรง
+
+        AkSoundEngine.StopAll(); // หยุดเสียงทั้งหมด
     }
 
     // ฟังก์ชันเล่นใหม่
     void OnRestartClick()
     {
         // ล้างค่าเก่า
+        AkSoundEngine.StopAll(); // หยุดเสียงทั้งหมด
         PlayerPrefs.DeleteKey("SavedCharacterIndex");
         PlayerPrefs.DeleteKey("SavedVariantIndex");
         PlayerPrefs.DeleteKey("SavedLove");

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F9CBF813-FA7B-400B-B25A-05893C52ADAE}",
     "Language": "SFX",
-    "Hash": "{D8B0144D-BFEB-2DAE-5D40-B4CF3DF8976C}",
+    "Hash": "{6E0A5787-9690-0BE5-4B02-37252B556875}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\AllEatingSoundBank",
     "ShortName": "AllEatingSoundBank",
     "Path": "AllEatingSoundBank.bnk",
@@ -183,6 +183,76 @@
       ]
      },
      {
+      "Id": "718117090",
+      "Name": "Char_Voice_10",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_10",
+      "GUID": "{988892E6-C38F-4E24-B7FC-2A9564DD74DC}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
+      "MediaRefs": [
+       {
+        "Id": "702250583"
+       }
+      ]
+     },
+     {
+      "Id": "718117091",
+      "Name": "Char_Voice_11",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_11",
+      "GUID": "{BF6E6427-3CB9-469E-8774-D962B3561A84}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5696555",
+      "DurationMax": "0.65815306",
+      "MediaRefs": [
+       {
+        "Id": "901214739"
+       }
+      ]
+     },
+     {
+      "Id": "718117088",
+      "Name": "Char_Voice_12",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_12",
+      "GUID": "{C798A794-8805-483E-8A50-90D74379E9A4}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3082991",
+      "DurationMax": "1.620036",
+      "MediaRefs": [
+       {
+        "Id": "186136113"
+       }
+      ]
+     },
+     {
+      "Id": "718117089",
+      "Name": "Char_Voice_13",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_13",
+      "GUID": "{F9828063-1DA4-4146-9457-12AEBC3B461C}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
+      "MediaRefs": [
+       {
+        "Id": "702250583"
+       }
+      ]
+     },
+     {
+      "Id": "718117094",
+      "Name": "Char_Voice_14",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_14",
+      "GUID": "{4BA7AD99-4BB1-4D50-B1C4-66CD97CD1BB9}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
+      "MediaRefs": [
+       {
+        "Id": "702250583"
+       }
+      ]
+     },
+     {
       "Id": "554389285",
       "Name": "Char_Voice_2",
       "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_2",
@@ -257,11 +327,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_5",
       "GUID": "{4DA85F40-5BC0-4E1C-8629-78044A61C6FF}",
       "DurationType": "OneShot",
-      "DurationMin": "0.5696555",
-      "DurationMax": "0.65815306",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
       "MediaRefs": [
        {
-        "Id": "901214739"
+        "Id": "702250583"
        }
       ]
      },
@@ -270,6 +340,66 @@
       "Name": "Char_Voice_6",
       "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_6",
       "GUID": "{0CC3E67D-70F8-44CA-9730-5237AE83D5B5}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.40762",
+      "DurationMax": "1.58",
+      "MediaRefs": [
+       {
+        "Id": "702250583"
+       }
+      ]
+     },
+     {
+      "Id": "554389280",
+      "Name": "Char_Voice_7",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_7",
+      "GUID": "{2EF0073C-67F4-4CB4-9071-4D538A8A98CD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.78435946",
+      "DurationMax": "3.0141613",
+      "MediaRefs": [
+       {
+        "Id": "358066055"
+       },
+       {
+        "Id": "377256644"
+       },
+       {
+        "Id": "414764179"
+       },
+       {
+        "Id": "443441612"
+       },
+       {
+        "Id": "448348087"
+       },
+       {
+        "Id": "608457550"
+       },
+       {
+        "Id": "961012535"
+       }
+      ]
+     },
+     {
+      "Id": "554389295",
+      "Name": "Char_Voice_8",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_8",
+      "GUID": "{6D247DC5-9F5F-407D-8356-27F1A16A423D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9537062",
+      "DurationMax": "1.1341543",
+      "MediaRefs": [
+       {
+        "Id": "448348087"
+       }
+      ]
+     },
+     {
+      "Id": "554389294",
+      "Name": "Char_Voice_9",
+      "ObjectPath": "\\Events\\Default Work Unit\\Form\\Char_Voice_9",
+      "GUID": "{58C50B5D-892B-4D9F-A024-B9503C4D78B9}",
       "DurationType": "OneShot",
       "DurationMin": "1.40762",
       "DurationMax": "1.58",
@@ -296,6 +426,6 @@
     ]
    }
   ],
-  "FileHash": "{AD6F8D52-8F45-DB93-2C4B-68962CFE2D46}"
+  "FileHash": "{CA07CB12-91B6-C837-F7AE-FF22D7D53A6B}"
  }
 }

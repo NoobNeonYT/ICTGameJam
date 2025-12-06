@@ -91,7 +91,7 @@ public class Grownscript : MonoBehaviour
 
     void Awake()
     {
-        AkSoundEngine.LoadBank("MusicBank", out uint bankID);
+        
         AkSoundEngine.LoadBank("UISoundBank", out uint uiBankID);
         AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
         AkSoundEngine.LoadBank("CutscenceSoundBank", out uint scencebankID);
@@ -150,10 +150,7 @@ public class Grownscript : MonoBehaviour
 
         PlayPopEffect();
 
-        AkSoundEngine.LoadBank("UISoundBank", out uint bankID);
-        AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
-        AkSoundEngine.LoadBank("CutscenceSoundBank", out uint scencebankID);
-        AkSoundEngine.LoadBank("AllEatingSoundBank", out uint eatbankID);
+        
     }
 
     void Update()

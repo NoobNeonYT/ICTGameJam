@@ -30,10 +30,20 @@
 				</Event>
 				<Event Name="MusicIngame" ID="{29B74B4C-C7C0-4349-B0C9-9B105A690CE1}">
 					<ChildrenList>
+						<Action Name="" ID="{9E228082-E47E-4317-860A-371BE5D0D894}" ShortID="391031662">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blundering-buffoons-matt-stewart-evans-main-version-36165-02-00" ID="{D2F4BB24-759E-4E02-96E8-F1B6A0110679}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{4D4F0C59-F39E-48D3-8EB8-021EE1BEF61B}" ShortID="210802349">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="cotton-toys-soundroll-main-version-16753-01-17" ID="{F0AC0BFD-E7D3-493E-92E6-344DE6B5A40E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+									<ObjectRef Name="blundering-buffoons-matt-stewart-evans-main-version-36165-02-00" ID="{D2F4BB24-759E-4E02-96E8-F1B6A0110679}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

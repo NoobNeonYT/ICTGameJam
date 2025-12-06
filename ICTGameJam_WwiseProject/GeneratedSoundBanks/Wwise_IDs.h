@@ -21,6 +21,14 @@ namespace AK
         static const AkUniqueID CHAR_VOICE_4 = 554389283U;
         static const AkUniqueID CHAR_VOICE_5 = 554389282U;
         static const AkUniqueID CHAR_VOICE_6 = 554389281U;
+        static const AkUniqueID CHAR_VOICE_7 = 554389280U;
+        static const AkUniqueID CHAR_VOICE_8 = 554389295U;
+        static const AkUniqueID CHAR_VOICE_9 = 554389294U;
+        static const AkUniqueID CHAR_VOICE_10 = 718117090U;
+        static const AkUniqueID CHAR_VOICE_11 = 718117091U;
+        static const AkUniqueID CHAR_VOICE_12 = 718117088U;
+        static const AkUniqueID CHAR_VOICE_13 = 718117089U;
+        static const AkUniqueID CHAR_VOICE_14 = 718117094U;
         static const AkUniqueID CUTSCENCEAMBIENT = 202611472U;
         static const AkUniqueID EVOLUTION = 2270224076U;
         static const AkUniqueID MUSICINGAME = 1121753349U;

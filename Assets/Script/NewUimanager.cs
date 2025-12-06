@@ -7,6 +7,7 @@ public class SceneChanger : MonoBehaviour
     public void LoadNewScene(string sceneName)
     {
         // โหลด Scene ใหม่ด้วย 'ชื่อ' ที่กำหนด
+        AkSoundEngine.StopAll();
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 

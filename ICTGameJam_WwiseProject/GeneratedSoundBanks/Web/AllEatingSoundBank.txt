@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	554389280	Char_Voice_7			\Default Work Unit\Form\Char_Voice_7	
 	554389281	Char_Voice_6			\Default Work Unit\Form\Char_Voice_6	
 	554389282	Char_Voice_5			\Default Work Unit\Form\Char_Voice_5	
 	554389283	Char_Voice_4			\Default Work Unit\Form\Char_Voice_4	
@@ -6,6 +7,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	554389285	Char_Voice_2			\Default Work Unit\Form\Char_Voice_2	
 	554389286	Char_Voice_1			\Default Work Unit\Form\Char_Voice_1	
 	554389287	Char_Voice_0			\Default Work Unit\Form\Char_Voice_0	
+	554389294	Char_Voice_9			\Default Work Unit\Form\Char_Voice_9	
+	554389295	Char_Voice_8			\Default Work Unit\Form\Char_Voice_8	
+	718117088	Char_Voice_12			\Default Work Unit\Form\Char_Voice_12	
+	718117089	Char_Voice_13			\Default Work Unit\Form\Char_Voice_13	
+	718117090	Char_Voice_10			\Default Work Unit\Form\Char_Voice_10	
+	718117091	Char_Voice_11			\Default Work Unit\Form\Char_Voice_11	
+	718117094	Char_Voice_14			\Default Work Unit\Form\Char_Voice_14	
 	2270224076	Evolution			\Default Work Unit\Form\Evolution	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
