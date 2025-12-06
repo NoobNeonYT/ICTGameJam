@@ -12,14 +12,7 @@ PluginImporter:
   validateReferences: 1
   platformData:
     Any:
-      enabled: 0
-      settings: {}
-    Editor:
-      enabled: 0
-      settings:
-        DefaultValueInitialized: true
-    WebGL:
-      enabled: 0
+      enabled: 1
       settings: {}
   userData: 
   assetBundleName: 
