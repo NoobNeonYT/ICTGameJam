@@ -4,6 +4,7 @@
 		<Project Name="ICTGameJam_WwiseProject" ID="{697D39D2-9A2A-47B0-AFB6-ADB1AE6D1BE1}">
 			<Platforms>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{D1CE817F-B98C-48F0-8AD0-8FF22FF57B50}" />
+				<Platform Name="Web" ReferencePlatform="Web" ID="{C4E27EDE-5872-431A-920A-E352B6DBA422}" />
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{3DAD78D9-97D4-456C-B0FD-EEB08E37B507}" />
 			</Platforms>
 			<LanguageList>
@@ -13,47 +14,70 @@
 				<Language Name="SFX" ID="{1970CE35-F7B3-4B6D-91C1-569C0C80FBF6}" />
 			</LanguageList>
 			<PropertyList>
+				<Property Name="AutoSoundBankEnabled" Type="bool" Value="True" />
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
+						<Value Platform="Web">GeneratedSoundBanks\Web\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="GenerateSoundBankXML" Type="bool" Value="False" /><Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="GenerateSoundBankJSON" Type="bool" Value="True" /><Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True" /><Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True" /><Property Name="AutoSoundBankEnabled" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../../ICTGameJam/ICTGameJam_WwiseProject/GeneratedSoundBanks/" />
+				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
+					<ValueList>
+						<Value Platform="Web">256</Value>
+						<Value Platform="Windows">256</Value>
+						<Value Platform="Mac">256</Value>
+					</ValueList>
+				</Property>
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
+				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../../ICTGameJam/ICTGameJam_WwiseProject/GeneratedSoundBanks/" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
+						<Value Platform="Web">GeneratedSoundBanks\Web\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+					</ValueList>
+				</Property>
+				<Property Name="VolumeThreshold" Type="Real64">
+					<ValueList>
+						<Value Platform="Web">-80</Value>
+						<Value Platform="Windows">-80</Value>
+						<Value Platform="Mac">-80</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2025.1.3|Build=9039|VersionName=v2025.1.3|Config=Release" />
