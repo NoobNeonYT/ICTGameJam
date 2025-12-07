@@ -1157,7 +1157,7 @@ MonoBehaviour:
   SumLove: 0
   Grown: 0
   SumGrown: 0
-  StartTime: 10
+  StartTime: 35
   timeremain: 4
   timerText: {fileID: 921930780}
   timerRunning: 0

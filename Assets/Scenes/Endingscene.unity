@@ -648,8 +648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -98.8737, y: 29.448}
-  m_SizeDelta: {x: 650.0818, y: 129.674}
+  m_AnchoredPosition: {x: -28.0808, y: 76}
+  m_SizeDelta: {x: 795.0748, y: 131.572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905342498
 MonoBehaviour:
@@ -737,7 +737,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -218.79398, w: 0}
+  m_margin: {x: 1.8588867, y: 0, z: -8.739166, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1230,49 +1230,75 @@ MonoBehaviour:
   EndingList:
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 4ede492952081a54cb5930c168ae359b, type: 3}
-    Dialogue: 001
+    Dialogue: How could you let him starve like this?! That's terrible! He's still
+      a baby; he needs a lot of food, you know that! You aren't fit to be a parent!
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 6988e82bbc32b92409c8eab5661ad080, type: 3}
-    Dialogue: 002
+    Dialogue: What are you even giving him to eat? He looks so famished... but maybe
+      that's just rage? I can't tell if he's hungry or furious
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 0da73d048fd88574f89f9892659f4e59, type: 3}
-    Dialogue: 003
+    Dialogue: ' Wow, your little guy is so adorable! How old is he? He''s grown up
+      to be as cute as you are!'
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: edac024474642b44a9aa59259e5265a1, type: 3}
-    Dialogue: 004
+    Dialogue: ' I''m so angry! So angry! What have you done?! This is terrifying!
+      Be careful, he might decide to eat you instead of his next meal!'
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 6548cc9c8c6d6e74884d586fbc29116b, type: 3}
-    Dialogue: 005
+    Dialogue: Giggle. Aww, why is he being so bashful? Such a sweet little animal!
+      Seriously though, where did he get that outfit?
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: e463619e1a5920e49a15892e0b5a1045, type: 3}
-    Dialogue: 006
+    Dialogue: Ooh! Is that the same little pet? It grew up so much! Unbelievable.
+      You've done a great job looking after him
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 2bd8d0e8c69a8e64ba43c5a317f41a50, type: 3}
-    Dialogue: 007
+    Dialogue: Oh my god, so cute! What is that thing?! He's so incredibly adorable!
+      What did you feed him to make him this cute?
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 2fdf57475f326084e9a53b0ff7f64e58, type: 3}
-    Dialogue: 8
+    Dialogue: 'Uh oh, it seems your little pet isn''t very pleased with the food
+      you''re giving it, is it? Keep going, and try to survive! :>
+
+'
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: ba3319ad85b2437489a06bdbf7d61fc5, type: 3}
-    Dialogue: 9
+    Dialogue: Your little creature has evolved to be somewhat... cute, in a way.
+      Just look at the unsettling thing! Err... he looks famished. Are you sure you're
+      not underfeeding him?
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 8744ed5082bb4834ea79a64c298ad1e6, type: 3}
-    Dialogue: 10
+    Dialogue: 'Whoa, friend, why is there fluid oozing out of him? Seriously... Don''t
+      forget to find a bandage for the little guy. And maybe teach him how to close
+      his eyes, too? That stare is genuinely freaking me out.
+
+'
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: dab8f6b2fe19369448e1568f52e78558, type: 3}
-    Dialogue: 11
+    Dialogue: Wow, he actually looks happy, doesn't he? He's grown up to be... well...
+      something. But how are you looking after him? Why does he have wounds? How
+      could you do this to our little pet?
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: d9583c1fc49ace84f9d23aedb5e8ee7a, type: 3}
-    Dialogue: 12
+    Dialogue: 'Whoa, whoa, WHOA! What the heck even is that, dude?! It''s officially
+      a unit! What did you sneak into its kibble? I swear its stomach is filing for
+      divorce!
+
+'
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 17da0db17b6d61949af3e31744a431fb, type: 3}
-    Dialogue: 13
+    Dialogue: Damn! That is absolutely adorable! What did you feed that fluffy little
+      thing to make it grow up so cool? You have to teach me your ways sometime,
+      man!
   - Name: 
     CharacterSprite: {fileID: 21300000, guid: 4c6e387aa0be01448b71acc2f9cece83, type: 3}
-    Dialogue: 14
+    Dialogue: "Wow, what in the world is this?! It\u2019s clearly a divine blessing!
+      I seriously want this thing with me; it has such incredible presence!"
   - Name: 
-    CharacterSprite: {fileID: 21300000, guid: 4c6e387aa0be01448b71acc2f9cece83, type: 3}
-    Dialogue: 14
+    CharacterSprite: {fileID: 21300000, guid: 448bd9730ff0b6d4f9fee711e83ae3c8, type: 3}
+    Dialogue: Oh my God! Oh Lord! This is the greatest of the great of the great!
+      May we worship you, our National Treasure
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
