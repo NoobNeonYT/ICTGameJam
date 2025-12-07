@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3337922254",
+    "Type": "User",
+    "GUID": "{8906181F-76E5-4AAF-8021-9394ABA43474}",
+    "Language": "SFX",
+    "Hash": "{F2DB87F1-2FC3-5F89-8FEF-133A496E2976}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\UiSoundBank",
+    "ShortName": "UiSoundBank",
+    "Path": "UiSoundBank.bnk",
+    "Media": [
+     {
+      "Id": "795592417",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Ui\\UI_Click.wav",
+      "CachePath": "72/{72EF753F-79A2-F71E-D4F6-887D029E6617}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "471286636",
+      "Name": "UISound",
+      "ObjectPath": "\\Events\\Default Work Unit\\UISound",
+      "GUID": "{1BD8A048-F7D1-4D49-838E-A1D3275D3B3C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.031971585",
+      "DurationMax": "0.053769577",
+      "MediaRefs": [
+       {
+        "Id": "795592417"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{66D1F743-ACF6-5A37-19B1-36BADEDF4BFB}"
+ }
+}

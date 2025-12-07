@@ -12,21 +12,21 @@
     "GUID": "{D1CE817F-B98C-48F0-8AD0-8FF22FF57B50}",
     "BasePlatform": "Mac",
     "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
-    "Path": "Mac"
+    "Path": "../../Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac"
    },
    {
     "Name": "Web",
     "GUID": "{C4E27EDE-5872-431A-920A-E352B6DBA422}",
     "BasePlatform": "Web",
     "BasePlatformGUID": "{639AD233-23F2-4C0F-9127-79F44C15E1DA}",
-    "Path": "Web"
+    "Path": "../../Assets/StreamingAssets/Audio/GeneratedSoundBanks/Web"
    },
    {
     "Name": "Windows",
     "GUID": "{3DAD78D9-97D4-456C-B0FD-EEB08E37B507}",
     "BasePlatform": "Windows",
     "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
-    "Path": "Windows"
+    "Path": "../../Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows"
    }
   ],
   "Languages": [
@@ -38,6 +38,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{73DDEFCE-CB80-32BF-5673-0FFBC623CB82}"
+  "FileHash": "{9D593E5D-0DB1-3F05-134C-688BCE9EDA59}"
  }
 }

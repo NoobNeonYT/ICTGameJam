@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	202611472	CutscenceAmbient			\Default Work Unit\ScenceSound\CutscenceAmbient	
+	2804304819	BadEnding			\Default Work Unit\ScenceSound\BadEnding	
+	3176720821	CutscenceSound			\Default Work Unit\CutscenceSound	
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	548563413	BadEndTime			\Default Work Unit\BadEndTime	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	372167397	Bad End	.cache\4B\{4BAC7E5F-571E-13C6-379F-4962BBDBFC79}.wem		\Containers\Default Work Unit\Bad End		9093216
+	403524634	Bird_Nature	.cache\48\{4829E456-1F68-92E4-9AF8-38743D303EC4}.wem		\Containers\Default Work Unit\Ambience\Bird_Nature		15176976
+	1045165688	Sound	.cache\7B\{7B5E65A3-5D01-8460-7C0B-3608C3388FC3}.wem		\Containers\Default Work Unit\Sound		8505192
+
