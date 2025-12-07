@@ -10,6 +10,15 @@ public class DelayExample : MonoBehaviour
         // ต้องเรียกใช้ Coroutine ด้วย StartCoroutine()
         StartCoroutine(StartDelayedAction());
     }
+    private void Awake()
+    {
+        AkSoundEngine.LoadBank("CutscenceSoundBank", out uint cutscencemusicbankID);
+        AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
+
+
+        AkSoundEngine.PostEvent("CutscenceSound", gameObject);
+        AkSoundEngine.PostEvent("MusicMenu", gameObject);
+    }
 
     // ฟังก์ชันที่ใช้ในการรอ ต้องเป็น IEnumerator
     private IEnumerator StartDelayedAction()

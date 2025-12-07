@@ -256,58 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301902519}
   m_CullTransparentMesh: 1
---- !u!1 &508746729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 508746731}
-  - component: {fileID: 508746732}
-  m_Layer: 0
-  m_Name: Referee
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &508746731
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508746729}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1077.1992, y: 473.74973, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &508746732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508746729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d4d226a528ac0d44b78100b6f3597ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UiManager
-  menuCanvas: {fileID: 0}
-  inGameCanvas: {fileID: 1557638703}
-  gameSceneName: GameScene
-  audioMixer: {fileID: 0}
-  volumeSlider: {fileID: 0}
-  volumeParameter: MasterVolume
-  volumePanel: {fileID: 0}
-  volumeButton: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,9 +700,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Uianimation
   imageGroups: []
-  targetImage: {fileID: 771260028}
-  CharacterList: []
-  ShadowDisplayImage: {fileID: 0}
 --- !u!1 &771260027
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,9 +789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Uianimation
   imageGroups: []
-  targetImage: {fileID: 0}
-  CharacterList: []
-  ShadowDisplayImage: {fileID: 0}
 --- !u!1 &793255550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,5 +2156,4 @@ SceneRoots:
   - {fileID: 741929542}
   - {fileID: 1557638707}
   - {fileID: 1588642197}
-  - {fileID: 508746731}
   - {fileID: 1551765678}

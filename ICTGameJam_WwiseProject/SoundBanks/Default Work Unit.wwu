@@ -19,6 +19,7 @@
 				</SoundBank>
 				<SoundBank Name="CutscenceSoundBank" ID="{5108C26D-1800-40D1-9431-A52E3E0141EF}">
 					<ObjectInclusionList>
+						<ObjectRef Name="CutscenceSound" ID="{03034BF7-DB03-406F-954A-9BD7A2F03847}" WorkUnitID="{7A061427-90BC-4629-A8B2-25465C27520E}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" WorkUnitID="{8C329B2B-77E1-43B5-877F-864D12D98601}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

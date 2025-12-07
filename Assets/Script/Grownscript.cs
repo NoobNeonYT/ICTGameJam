@@ -91,7 +91,8 @@ public class Grownscript : MonoBehaviour
 
     void Awake()
     {
-        
+        AkSoundEngine.StopAll();
+
         AkSoundEngine.LoadBank("UISoundBank", out uint uiBankID);
         AkSoundEngine.LoadBank("MusicMenuBank", out uint musicbankID);
         AkSoundEngine.LoadBank("CutscenceSoundBank", out uint scencebankID);

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{5108C26D-1800-40D1-9431-A52E3E0141EF}",
     "Language": "SFX",
-    "Hash": "{A08C7965-E8AA-7BCB-E317-AE635FE2AF17}",
+    "Hash": "{8279C027-1A37-569D-1A3E-7219A26F568F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\CutscenceSoundBank",
     "ShortName": "CutscenceSoundBank",
     "Path": "CutscenceSoundBank.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "GameJam_Sound\\Ambience\\Bird_Nature.wav",
       "CachePath": "48/{4829E456-1F68-92E4-9AF8-38743D303EC4}.wem"
+     },
+     {
+      "Id": "1045165688",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GameJam_Sound\\Ambience\\Sound.wav",
+      "CachePath": "7B/{7B5E65A3-5D01-8460-7C0B-3608C3388FC3}.wem"
      }
     ],
     "Events": [
@@ -58,10 +66,24 @@
         "Id": "403524634"
        }
       ]
+     },
+     {
+      "Id": "3176720821",
+      "Name": "CutscenceSound",
+      "ObjectPath": "\\Events\\Default Work Unit\\CutscenceSound",
+      "GUID": "{03034BF7-DB03-406F-954A-9BD7A2F03847}",
+      "DurationType": "OneShot",
+      "DurationMin": "48.21483",
+      "DurationMax": "48.21483",
+      "MediaRefs": [
+       {
+        "Id": "1045165688"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{81EDDA9E-8FFB-7243-AFFC-8167834437CC}"
+  "FileHash": "{4B9CBDFE-18A6-3796-3644-DE66C8444ABA}"
  }
 }

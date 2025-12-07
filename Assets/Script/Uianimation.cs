@@ -11,41 +11,33 @@ public class ImageGroup
     // 1. ช่องแสดงผล (Image Component) สำหรับกลุ่มนี้
     public Image targetImage;
 
-    // 2. รายการ Sprite สำหรับช่องนี้โดยเฉพาะ (จะไม่ปนกับช่องอื่น)
+    // 2. รายการ Sprite สำหรับช่องนี้โดยเฉพาะ
     public List<Sprite> availableSprites;
 }
 
 public class Uianimation : MonoBehaviour
 {
-    // *** เปลี่ยน Array/List เดิม เป็น List ของ ImageGroup ***
+    // List ที่เก็บทั้งช่อง UI และ Sprite ของช่องนั้น (ต้องกำหนดค่า Size ใน Inspector)
     [SerializeField]
-    private List<ImageGroup> imageGroups; // List ที่เก็บทั้งช่อง UI และ Sprite ของช่องนั้น
-    [SerializeField]
-    private Image targetImage; // ตัวแปรสำหรับเก็บ Image Component ที่จะทำการขยาย
+    private List<ImageGroup> imageGroups = new List<ImageGroup>();
 
-    // ตัวแปรสำหรับกำหนดช่วงเวลาการสุ่ม (โค้ดเดิม)
-
+    // ตัวแปรสำหรับกำหนดช่วงเวลาการสุ่ม
     private float randomizeInterval = 0.25f;
-    [Header("Character shadow System")]
-    [SerializeField]
-    public List<CharacterItem> CharacterList; // ลิสต์เก็บข้อมูลตัวละครทุกร่าง
 
-    [SerializeField]
-    public Image ShadowDisplayImage; // ที่แสดงรูปตัวละคร
-
-    // Index ของตัวละครที่กำลังแสดงผล (เริ่มต้นที่ 0 = ร่างแรก)
-    private int currentshadow = 0;
+    // *** ตัวแปรที่ไม่เกี่ยวข้องกับการสุ่มภาพ UI ถูกลบออกไปทั้งหมดแล้ว ***
+    // (targetImage, CharacterList, ShadowDisplayImage, currentshadow ถูกลบออกจาก Script นี้)
 
     void Start()
     {
-        // ตรวจสอบว่ามีการกำหนดค่าหรือไม่
+        // ตรวจสอบว่ามีการกำหนดค่าหรือไม่ และมีข้อมูลอย่างน้อยหนึ่งกลุ่ม
         if (imageGroups != null && imageGroups.Count > 0)
         {
             StartCoroutine(RandomizeImageRoutine());
         }
         else
         {
-            Debug.LogError("UIManager: Image Groups ยังไม่ได้กำหนดค่า!");
+            // เปลี่ยนเป็น LogWarning เพื่อให้เกมรันต่อได้ (แต่แจ้งให้ทราบว่าไม่ได้ตั้งค่า)
+            Debug.LogWarning("Uianimation: Image Groups ว่างเปล่า! ไม่มีการสุ่มภาพ UI");
         }
     }
 
@@ -54,21 +46,23 @@ public class Uianimation : MonoBehaviour
     {
         while (true)
         {
-            // 1. วนลูปทำงานกับทุกกลุ่ม (Group) ที่กำหนดไว้
+            // วนลูปทำงานกับทุกกลุ่มที่กำหนดไว้
             foreach (ImageGroup group in imageGroups)
             {
-                // 2. ตรวจสอบว่ากลุ่มนี้มีช่อง UI และ Sprite ให้สุ่มหรือไม่
-                if (group.targetImage != null && group.availableSprites != null && group.availableSprites.Count > 0)
+                // ตรวจสอบเงื่อนไขอย่างเข้มงวด: Target Image ต้องมี, Sprite List ต้องมีรูปอย่างน้อย 1 รูป
+                if (group.targetImage != null &&
+                    group.availableSprites != null &&
+                    group.availableSprites.Count > 0)
                 {
-                    // 3. สุ่ม Index จาก Sprite List ของกลุ่มนี้โดยเฉพาะ
+                    // 1. สุ่ม Index จาก Sprite List ของกลุ่มนี้
                     int randomIndex = Random.Range(0, group.availableSprites.Count);
 
-                    // 4. เปลี่ยน Sprite ในช่องแสดงผลของกลุ่มนี้
+                    // 2. เปลี่ยน Sprite
                     group.targetImage.sprite = group.availableSprites[randomIndex];
                 }
             }
 
-            // 5. รอตามช่วงเวลาที่กำหนด (0.3 วินาที) ก่อนที่จะวนซ้ำ
+            // 3. รอตามช่วงเวลาที่กำหนด
             yield return new WaitForSeconds(randomizeInterval);
         }
     }

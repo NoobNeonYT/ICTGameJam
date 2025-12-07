@@ -14,9 +14,30 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
 				<WorkUnit Name="ScenceSound" ID="{8C329B2B-77E1-43B5-877F-864D12D98601}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{A79A51C1-EDFE-45C2-87E3-4C3BE2C5CCC4}" PersistMode="Reference"/>
+				<WorkUnit Name="Form" ID="{91459418-98ED-4EBF-850C-337190BAEB5D}" PersistMode="Reference"/>
+				<Event Name="CutscenceSound" ID="{03034BF7-DB03-406F-954A-9BD7A2F03847}">
+					<ChildrenList>
+						<Action Name="" ID="{646DF4C8-BF84-4FF8-A310-A1AA0E00D7CB}" ShortID="730168776">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sound" ID="{1843500C-9146-48B1-BC0E-4D6AC92C038E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{98035010-F43C-4B68-8F43-2ACA05DC021D}" ShortID="885555480">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sound" ID="{1843500C-9146-48B1-BC0E-4D6AC92C038E}" WorkUnitID="{33AD8CDF-4951-4608-8C32-F4B17F7D4D3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
