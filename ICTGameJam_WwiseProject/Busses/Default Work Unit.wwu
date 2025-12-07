@@ -4,6 +4,18 @@
 		<WorkUnit Name="Default Work Unit" ID="{1716898F-7883-481A-8960-106174DB4B48}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{4842DEBB-864C-4919-ABF6-7A4015F73EAC}" WorkUnitID="{BDE7FFC8-4795-4CA0-A946-B9B38D5858BA}"/>
@@ -15,7 +27,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>4</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
